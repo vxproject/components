@@ -1,0 +1,3 @@
+/* components/list/list-lsz.wxss */
+@import "/components/private.wxss";
+@import "/components/icon.wxss";

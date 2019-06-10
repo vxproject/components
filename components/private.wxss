@@ -1,0 +1,1056 @@
+/* tabBar */
+.tabbar_height {
+  padding: 0;
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+  min-height: 100rpx;
+}
+
+.tabbar {
+  box-shadow: 0 -1rpx 2rpx rgba(0, 0, 0, 0.1);
+}
+/* 简单弹性布局 */
+
+.flex {
+  display: flex;
+}
+
+.row {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.end {
+  display: flex;
+  flex-flow: row-reverse wrap;
+}
+
+.row-nowrap {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.column {
+  display: flex;
+  flex-flow: column;
+}
+
+.end-column {
+  display: flex;
+  flex-flow: column-reverse wrap;
+}
+
+.column-nowrap {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.baseline {
+  display: flex;
+  align-items: baseline;
+}
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shrink {
+  flex-shrink: 0;
+}
+
+/* 定位 */
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+/* 动画 */
+
+.transition {
+  transition: all 0.3s;
+}
+
+/* 字体大小 */
+.fs-22 {
+  font-size: 22rpx !important;
+}
+.fs-24 {
+  font-size: 24rpx !important;
+}
+
+.fs-26 {
+  font-size: 26rpx !important;
+}
+
+.fs-28 {
+  font-size: 28rpx !important;
+}
+
+.fs-30 {
+  font-size: 30rpx !important;
+}
+
+.fs-32 {
+  font-size: 32rpx !important;
+}
+
+.fs-34 {
+  font-size: 34rpx !important;
+}
+
+.fs-36 {
+  font-size: 36rpx !important;
+}
+
+.fs-38 {
+  font-size: 38rpx !important;
+}
+
+.fs-40 {
+  font-size: 40rpx !important;
+}
+
+.fs-50 {
+  font-size: 50rpx !important;
+}
+
+.fs-60 {
+  font-size: 60rpx !important;
+}
+
+/* 字体颜色 */
+
+.fc-red {
+  color: #e54d42;
+}
+
+.fc-orange {
+  color: #f37b1d;
+}
+
+.fc-yellow {
+  color: #fbbd08;
+}
+
+.fc-olive {
+  color: #8dc63f;
+}
+
+.fc-green {
+  color: #39b54a;
+}
+
+.fc-cyan {
+  color: #1cbbb4;
+}
+
+.fc-blue {
+  color: #0081ff;
+}
+
+.fc-purple {
+  color: #6739b6;
+}
+
+.fc-mauve {
+  color: #9c26b0;
+}
+
+.fc-pink {
+  color: #e03997;
+}
+
+.fc-brown {
+  color: #a5673f;
+}
+
+.fc-grey {
+  color: #8799a3;
+}
+
+.fc-coffee {
+  color: #653;
+}
+
+.fc-silfer {
+  color: #456;
+}
+
+.fc-gray {
+  color: #f0f0f0;
+}
+
+.fc-black {
+  color: #333;
+}
+
+.fc-a3 {
+  color: #a3a3a3;
+}
+.fc-66{
+  color: #666;
+}
+.fc-white {
+  color: #fff;
+}
+
+/* 背景色 */
+
+.bc-window {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.bc-red {
+  background-color: #e54d42;
+}
+
+.bc-orange {
+  background-color: #f37b1d;
+}
+
+.bc-yellow {
+  background-color: #fbbd08;
+}
+
+.bc-olive {
+  background-color: #8dc63f;
+}
+
+.bc-green {
+  background-color: #39b54a;
+}
+
+.bc-cyan {
+  background-color: #1cbbb4;
+}
+
+.bc-blue {
+  background-color: #0081ff;
+}
+
+.bc-purple {
+  background-color: #6739b6;
+}
+
+.bc-mauve {
+  background-color: #9c26b0;
+}
+
+.bc-pink {
+  background-color: #e03997;
+}
+
+.bc-brown {
+  background-color: #a5673f;
+}
+
+.bc-grey {
+  background-color: #8799a3;
+}
+
+.bc-gray {
+  background-color: #f0f0f0;
+}
+
+.bc-f5 {
+  background-color: #f5f5f5;
+}
+.bc-a3{
+  background-color: #a3a3a3;
+}
+
+.bc-black {
+  background-color: #333333;
+}
+
+.bc-white {
+  background-color: #ffffff;
+}
+
+/* 背景渐变色格式 */
+
+/* 45度角倾斜渐变 */
+
+.bg-gradual-red {
+  background: linear-gradient(45deg, #f43f3b, #ec008c);
+}
+
+.bg-gradual-green {
+  background: linear-gradient(45deg, #3bb9f4, #00ec7e);
+}
+
+/* 外边距  */
+
+.mr-10 {
+  margin-right: 10rpx;
+}
+
+.mr-15 {
+  margin-right: 15rpx;
+}
+
+.mr-20 {
+  margin-right: 20rpx;
+}
+
+.mr-25 {
+  margin-right: 25rpx;
+}
+
+.mr-30 {
+  margin-right: 30rpx;
+}
+
+.mr-35 {
+  margin-right: 35rpx;
+}
+
+.mr-40 {
+  margin-right: 40rpx;
+}
+
+.ml-10 {
+  margin-left: 10rpx;
+}
+
+.ml-15 {
+  margin-left: 15rpx;
+}
+
+.ml-20 {
+  margin-left: 20rpx;
+}
+
+.ml-25 {
+  margin-left: 25rpx;
+}
+
+.ml-30 {
+  margin-left: 30rpx;
+}
+
+.ml-35 {
+  margin-left: 35rpx;
+}
+
+.ml-40 {
+  margin-left: 40rpx;
+}
+
+.mx-10 {
+  margin-right: 10rpx;
+  margin-left: 10rpx;
+}
+
+.mx-20 {
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+.mx-30 {
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+}
+
+.mx-40 {
+  margin-right: 40rpx;
+  margin-left: 40rpx;
+}
+
+.mt-10 {
+  margin-top: 10rpx;
+}
+
+.mt-20 {
+  margin-top: 20rpx;
+}
+
+.mt-30 {
+  margin-top: 30rpx;
+}
+
+.mt-40 {
+  margin-top: 40rpx;
+}
+
+.mt-50 {
+  margin-top: 50rpx;
+}
+
+.mt-60 {
+  margin-top: 60rpx;
+}
+
+.mt-100 {
+  margin-top: 100rpx;
+}
+
+.mt-120 {
+  margin-top: 120rpx;
+}
+
+.mt-240 {
+  margin-top: 240rpx;
+}
+
+.mb-10 {
+  margin-bottom: 10rpx;
+}
+
+.mb-20 {
+  margin-bottom: 20rpx;
+}
+
+.mb-30 {
+  margin-bottom: 30rpx;
+}
+
+.mb-40 {
+  margin-bottom: 40rpx;
+}
+
+.mb-50 {
+  margin-bottom: 50rpx;
+}
+
+.mb-60 {
+  margin-bottom: 60rpx;
+}
+
+.mb-80 {
+  margin-bottom: 80rpx;
+}
+.mb-96 {
+  margin-bottom: 96rpx;
+}
+
+.mb-100 {
+  margin-bottom: 100rpx;
+}
+
+.mb-120 {
+  margin-bottom: 120rpx;
+}
+
+.mb-240 {
+  margin-bottom: 240rpx;
+}
+
+.my-10 {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.my-20 {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+}
+
+.my-30 {
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.my-40 {
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+}
+
+.m-10 {
+  margin: 10rpx;
+}
+
+.m-20 {
+  margin: 20rpx;
+}
+
+.m-30 {
+  margin: 30rpx;
+}
+
+.m-40 {
+  margin: 40rpx;
+}
+
+/* 宽高 */
+
+.w-all {
+  width: 100%;
+}
+
+.wp-20 {
+  width: 20%;
+}
+.wp-33 {
+  width: 33.3%;
+}
+
+.wp-40 {
+  width: 40%;
+}
+
+.wp-70 {
+  width: 70%;
+}
+
+.h-all {
+  height: 100%;
+}
+
+.hp-20 {
+  height: 20%;
+}
+
+.hp-70 {
+  height: 70%;
+}
+
+.hp-80 {
+  height: 80%;
+}
+
+.h-32 {
+  height: 32rpx;
+}
+
+.h-80 {
+  height: 80rpx;
+}
+
+.h-100 {
+  height: 100rpx;
+}
+
+.h-120 {
+  height: 120rpx;
+}
+
+.h-160 {
+  height: 160rpx;
+}
+
+.h-200 {
+  height: 200rpx;
+}
+
+.h-240 {
+  height: 240rpx;
+}
+
+.h-360 {
+  height: 360rpx;
+}
+
+.h-480 {
+  height: 480rpx;
+}
+
+.h-680 {
+  height: 680rpx;
+}
+
+.w-100 {
+  width: 100rpx;
+}
+
+.w-120 {
+  width: 120rpx;
+}
+
+.w-160 {
+  width: 160rpx;
+}
+
+.w-200 {
+  width: 200rpx;
+}
+
+.w-240 {
+  width: 240rpx;
+}
+
+.w-360 {
+  width: 360rpx;
+}
+
+.wh-10 {
+  width: 10rpx;
+  height: 10rpx;
+}
+
+.wh-15 {
+  width: 15rpx;
+  height: 15rpx;
+}
+
+.wh-20 {
+  width: 20rpx;
+  height: 20rpx;
+}
+
+.wh-30 {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.wh-40 {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.wh-48 {
+  width: 48rpx;
+  height: 48rpx;
+}
+
+.wh-50 {
+  width: 50rpx;
+  height: 50rpx;
+}
+.wh-60 {
+  width: 60rpx;
+  height: 60rpx;
+}
+.wh-80 {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.wh-120 {
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.wh-180 {
+  width: 180rpx;
+  height: 180rpx;
+}
+
+.wh-300 {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+/* padding */
+
+.py-6 {
+  padding-top: 6rpx;
+  padding-bottom: 6rpx;
+}
+
+.py-10 {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+}
+
+.py-20 {
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+
+.py-30 {
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+}
+
+.px-10 {
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+}
+
+.px-20 {
+  padding-right: 20rpx;
+  padding-left: 20rpx;
+}
+
+.px-30 {
+  padding-right: 30rpx;
+  padding-left: 30rpx;
+}
+
+.pt-20 {
+  padding-top: 20rpx;
+}
+
+.pt-30 {
+  padding-top: 30rpx;
+}
+
+.pb-20 {
+  padding-bottom: 20rpx;
+}
+
+.pb-30 {
+  padding-bottom: 30rpx;
+}
+
+.pr-10 {
+  padding-right: 10rpx;
+}
+
+.pr-20 {
+  padding-right: 20rpx;
+}
+
+.pr-30 {
+  padding-right: 30rpx;
+}
+
+.pl-20 {
+  padding-left: 20rpx;
+}
+
+.pl-30 {
+  padding-left: 30rpx;
+}
+
+.p-10 {
+  padding: 10rpx;
+}
+
+.p-20 {
+  padding: 20rpx;
+}
+
+.p-30 {
+  padding: 30rpx;
+}
+
+.p-40 {
+  padding: 40rpx;
+}
+
+.p-10-20 {
+  padding: 10rpx 20rpx;
+}
+
+.p-10-30 {
+  padding: 10rpx 30rpx;
+}
+
+/* 弧度 */
+
+.radius-4 {
+  border-radius: 4rpx;
+}
+
+.radius-6 {
+  border-radius: 6rpx;
+}
+
+.radius-8 {
+  border-radius: 8rpx;
+}
+
+.radius-10 {
+  border-radius: 10rpx;
+}
+
+.radius-15 {
+  border-radius: 15rpx;
+}
+
+.radius-all {
+  border-radius: 100%;
+}
+
+.radius-p5 {
+  border-radius: 50%;
+}
+
+/* 线 */
+
+.border {
+  border: 1rpx solid;
+}
+
+.b {
+  position: relative;
+}
+
+.b::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border: 1rpx solid #797878;
+  transform-origin: 0 0;
+  border-radius: 10rpx;
+}
+
+.br {
+  position: relative;
+}
+
+.br::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border-right: 1rpx solid #797878;
+  transform-origin: 0 0;
+}
+
+.bb {
+  position: relative;
+}
+
+/* #b6c2ce */
+
+.bb::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border-bottom: 1rpx solid #b6c2ce;
+  transform-origin: 0 0;
+}
+/* 阴影 (推荐使用伪元素方法)*/
+.shadow-6{
+   /* 上下、左右、阴影长度、颜色 */
+  box-shadow: 3rpx 5rpx 6rpx red;  
+  
+}
+
+.shadow{
+  position: relative;
+}
+.shadow::before{
+  content: "";
+  display: block;
+  background-color: inherit;
+  filter: blur(8rpx);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10rpx;
+  left: 10rpx;
+  z-index: -1;
+  opacity: 0.4;
+  border-radius: inherit;
+  transform: scale(1, 1);
+}
+
+
+
+/*弹窗 隐藏、显示 */
+
+.hiddenview {
+  opacity: 0;
+  transform: scale(1.18);
+  transition: all 0.3s ease-in 0s;
+  pointer-events: none;
+}
+
+.showview {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.3s ease-in 0s;
+}
+
+/* 层级 */
+
+.z-max {
+  z-index: 999999;
+}
+
+.z-500 {
+  z-index: 500;
+}
+
+.z-1000 {
+  z-index: 1000;
+}
+
+/* 圆形 */
+
+.circle {
+  width: 15rpx;
+  height: 15rpx;
+  border-radius: 50%;
+}
+
+/* 红心形状 */
+
+.heart {
+  position: relative;
+  width: 12.5px;
+  height: 11.25px;
+}
+
+.heart:before, .heart:after {
+  position: absolute;
+  content: "";
+  left: 6.25px;
+  top: 0;
+  width: 6.25px;
+  height: 10px;
+  background: red;
+  border-radius: 6.25px 6.25px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+.heartG {
+  position: relative;
+  width: 12.5px;
+  height: 11.25px;
+}
+
+.heartG:before, .heartG:after {
+  position: absolute;
+  content: "";
+  left: 6.25px;
+  top: 0;
+  width: 6.25px;
+  height: 10px;
+  background: #a3a3a3;
+  border-radius: 6.25px 6.25px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+
+.heartG:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+
+/* 超出自动 */
+
+.auto {
+  overflow: auto;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+/* 超出部分使用省略号 */
+
+.line-1 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+
+/* 旋转2D 、3D  顺时针方向*/
+
+.rotate-90 {
+  transform: rotate(90deg);
+  transition: all 0.3s;
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+  transition: all 0.3s;
+}
+
+.rotate-270 {
+  transform: rotate(270deg);
+  transition: all 0.3s;
+}
+
+.rotate-360 {
+  transform: rotate(360deg);
+  transition: all 0.3s;
+}
+
+.rotate3d-180 {
+  transform: rotate3d(180deg);
+  transition: all 0.3s;
+}
+
+/* 音乐动画 */
+
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) scale(1.1);
+    background-color: red;
+  }
+
+  25% {
+    transform: rotate(90deg) scale(0.8);
+    background-color: blue;
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1.1);
+    background-color: orange;
+  }
+
+  75% {
+    transform: rotate(270deg) scale(0.8);
+    background-color: blue;
+  }
+
+  100% {
+    transform: rotate(360deg) scale(1.1);
+    background-color: red;
+  }
+}
+
+.button-hover{
+  transform: scale(1rpx,1rpx);
+}
+
+/* 重置button样式 */
+button {
+  background-color: rgb(247, 247, 247);
+  border-radius: 0rpx;
+  padding: 0rpx;
+  margin: 0rpx;
+  display: inline-block;
+  line-height: 1;
+}
+
+button::after {
+  border: none;
+}

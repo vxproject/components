@@ -1,0 +1,13 @@
+<image mode='widthFill' class='shrink  w-all ' src='{{src}}' />
+<view class='my-30'>
+
+  <list-lsz arrayList="{{arrayList}}" arrow color="{{color}}" type arrowcolor="{{arrowcolor}}" catchchooseOne="catchchooseOne"></list-lsz>
+  <view class='tabbar_height w-all'></view>
+  <view class='btn_contact'>
+    <button open-type='contact' class='btn_cont' style='background:{{color}};'> 客服中心</button>
+  </view>
+
+</view>
+
+<window id="toast" title="提示" content="努力完善中···敬请期待" type="toast">
+</window>

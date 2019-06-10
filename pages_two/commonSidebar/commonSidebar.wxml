@@ -1,0 +1,19 @@
+
+<image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
+
+<view class='p-20 m-30 radius-8 fc-red bc-white  middle relative ' style="animation:{{index%2==0?' right-left':'left-right'}} {{index*0.2+2}}s  1" wx:for="{{arr}}" wx:key="" catchtap='choose' data-title="{{item.cont}}">
+  · 普通侧边栏
+  <text class='fc-green'>{{item.title}}</text>
+
+ 
+     <tag-lsz   type="{{index%2==0?'base':'no'}}" class='absolute' style='top:-10rpx;left:0'  bgColor="{{index%2==0?'#8dc63f':''}}">普通</tag-lsz>
+  
+</view>
+
+
+<!-- 抽屉式 -->
+<view class='fc-red bc-white p-20 m-30 radius-8 middle relative' style="animation: {{index%2==0?' right-left':'left-right'}} {{index*0.2+2}}s  1" wx:for="{{Arr}}" wx:key="{{}}" catchtap='chooseBox' data-title="{{item.cont}}" data-index="{{item.text}}">
+  {{item.title}}
+  <text class='fc-purple'>{{item.txt}}</text>
+   <tag-lsz   type="{{index%2==0?'circle':'no'}}" class='absolute' style='top:-10rpx;left:0'  color="{{index%2==0?'#8dc63f':'#0081ff'}}">抽屉式</tag-lsz>
+</view>

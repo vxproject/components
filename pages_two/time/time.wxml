@@ -1,0 +1,33 @@
+<!--pages/time/time.wxml-->
+<view class='p-30 bc-white between'>
+  <view class=''>默认状态（24小时）</view>
+  <time-lsz></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>限定时间</view>
+  <time-lsz time="1800"></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>默认边框</view>
+  <time-lsz border time="30"></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>直角边框</view>
+  <time-lsz border color="#f37b1d"></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>圆角边框</view>
+  <time-lsz border  radius  color="#8dc63f"></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>大</view>
+  <time-lsz border  radius size="50" color="#8dc63f"></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>再大</view>
+  <time-lsz border  radius size="80" color="#f37b1d"></time-lsz>
+</view>
+<view class='p-30 bc-white between'>
+  <view class=''>再大</view>
+  <time-lsz   radius size="100" color="#8dc63f"></time-lsz>
+</view>

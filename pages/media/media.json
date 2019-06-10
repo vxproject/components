@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "list-lsz": "/components/list-lsz/list-lsz",
+    "window": "/components/window/window"
+  }
+}

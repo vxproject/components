@@ -1,0 +1,18 @@
+<!-- 目录导航 -->
+<view class=' h-680 bc-white p-20  relative '>
+  <view class='absolute column-nowrap auto  hp-80 bc-orange z-max  radius-8' style='top:10%;right:5%;'>
+    <view wx:for="{{array}}" wx:key="" class="hp-20 px-20 middle center shrink fc-white" catchtap='chooseOne' data-item="{{item}}" data-index="{{index}}">{{item}}</view>
+
+  </view>
+  <scroll-view scroll-y scroll-with-animation scroll-into-view="index-{{arrindex}}" class='h-all auto '>
+    <view wx:for="{{array.length}}" wx:key="" class='bc-white ' id="index-{{index}}">
+      <view class='fc-white bc-grey p-30 '>对象--{{array[index]}}</view>
+      <view wx:for="{{8}}" wx:key="">
+        <view class='px-30 between '>
+          <view class='py-20'> 结果</view>
+          <slot> </slot>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>

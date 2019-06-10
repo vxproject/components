@@ -1,0 +1,2 @@
+/* components/time-lsz/time-lsz.wxss */
+@import "/components/private.wxss";

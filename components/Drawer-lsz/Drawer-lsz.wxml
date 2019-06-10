@@ -1,0 +1,26 @@
+<!-- 抽屉式侧边栏 -->
+
+<view wx:if='{{type}}'>
+  <view class="fixed window transition auto {{sidebarType? Lordflag? direction=='left'?' scale1 right-zero':'scale1 left-zero': direction=='left'? 'right-eight none scaleright':'left-eight none scale9' :Lordflag?  direction=='left'?' scale1 right-zero' : 'scale1 left-zero': direction=='left'? 'right-eight none':' left-eight none'   }}   ">
+    <slot name="window"></slot>
+  </view>
+  <view class="fixed leftwindow {{direction=='left'?'right-zero':''}} transition {{sidebarType?Lordflag? direction=='left'?'translaterightscale none opacity':'translateleftscale none  opacity':'scale1 ':Lordflag?direction=='left'?'translateright none  opacity': 'translateleft  none  opacity': ''}} auto ">
+    <slot name="leftwindow"></slot>
+  </view>
+  <view class=" relative {{direction=='left'?'rightsmall':'leftsmall'}} transition {{Lordflag?   '  opacity none w-all': 'wp-20  bc-window '}} " catchtap='catchtap'>
+    <i class="icon-15  iconfont  fs-50  fc-white absolute {{direction=='left'?'':'rotate-180'}}" style="bottom:40rpx;right:40rpx;"></i>
+    <slot name="small"></slot>
+  </view>
+</view>
+<!-- 普通式侧边栏 -->
+<view wx:if='{{!type}}'>
+  <view class="fixed window  auto">
+    <slot name="window"></slot>
+  </view>
+  <view class="fixed leftwindow auto transition  {{Lordflag?'opacity  general-'+direction :'general-direc-'+direction }} ">
+    <slot name="leftwindow"></slot>
+  </view>
+  <view class=" bc-window  transition {{Lordflag?'general-small-'+direction:'general-smalldir-'+direction}} " catchtap='catchtap'>
+    <slot name="small"></slot>
+  </view>
+</view>

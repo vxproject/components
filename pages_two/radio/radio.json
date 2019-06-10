@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "单、复选择框",
+  "usingComponents": {
+    "radio": "/components/radio-lsz/radio-lsz"
+  }
+}

@@ -1,0 +1,51 @@
+/* components/topTab/topTab.wxss */
+@import "/components/private.wxss";
+
+.bc-white {
+  background-color: #fff;
+  position: fixed;
+  width: 100%;
+  color: #a3a3a3;
+  font-size: 30rpx;
+}
+
+.column_nowrap {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+
+.middle {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+}
+
+.between {
+  display: flex;
+  justify-content: space-between;
+}
+
+.around {
+  display: flex;
+  justify-content: space-around;
+}
+
+.py-20 {
+  padding: 20rpx 0;
+  flex-shrink: 0;
+}
+
+.transform {
+  transition: all 0.3s;
+}
+
+.tab_border {
+  border-bottom: 1rpx solid;
+}
+
+

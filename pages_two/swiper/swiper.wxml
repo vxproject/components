@@ -1,0 +1,7 @@
+<view class='m-40 fc-red'>·普通轮播</view>
+<wxswiper list="{{imglist}}" ind_dots catchTap="catchTap" autoplay circular ind_type="heart"></wxswiper>
+<view class='m-40 fc-red'>·卡片形式</view>
+<wxswiper list="{{imglist}}" height="500" type="card" circular autoplay ind_color="blue" ind_active_color="green" ind_dots catchTap="catchTap"></wxswiper>
+<view class='m-40 fc-red'>·层叠形式（待更新...）</view>
+<wxswiper id='tower' list="{{imglist}}" height="500" type="tower" catchTap="catchTap" bindStart="bindStart"></wxswiper>
+

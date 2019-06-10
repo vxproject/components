@@ -1,0 +1,3 @@
+/* pages/drawer/drawer.wxss */
+@import "/components/private.wxss";
+

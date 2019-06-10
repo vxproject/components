@@ -1,0 +1,39 @@
+<view class=' middle p-40' style='color:{{color}}'>直角类型 type为no</view>
+<view class='p-30 '>
+  <tag-lsz>团购</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz color="{{color}}">秒杀</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz bgColor="{{color}}">砍价</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz bgColor="{{color}}" >限时抢购</tag-lsz>
+</view>
+<view class=' middle p-40' style='color:{{color}}'>圆润类型 type为base</view>
+<view class='p-30  '>
+  <tag-lsz type="base">团购</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz type="base" color="{{color}}">秒杀</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz bgColor="{{color}}" type="base">砍价</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz bgColor="{{color}}" type="base">限时抢购</tag-lsz>
+</view>
+<view class=' middle p-40' style='color:{{color}}'>圆类型 type为circle</view>
+<view class='p-30  '>
+  <tag-lsz type="circle">团购</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz type="circle" color="{{color}}">秒杀</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz type="circle" bgColor="{{color}}">砍价</tag-lsz>
+</view>
+<view class='p-30  '>
+  <tag-lsz bgColor="{{color}}" type="circle">限时抢购</tag-lsz>
+</view>

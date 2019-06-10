@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "顶、底导航",
+  "usingComponents": {
+    "navigation-lsz": "/components/navigation-lsz/navigation-lsz",
+    "Catalog-lsz":"/components/Catalog-lsz/Catalog-lsz"
+  }
+}

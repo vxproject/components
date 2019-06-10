@@ -1,0 +1,81 @@
+{
+  "pages": [
+    "pages/tabBar/tabBar",
+    "pages/index/index",
+    "pages/custom/custom",
+    "pages/media/media",
+    "pages/own/own"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "李守长"
+  },
+  "usingComponents": {
+    "custom-tabbar": "/custom-tab-bar/index"
+  },
+  "subpackages": [
+    {
+      "root": "pages_one",
+      "name": "pages_one",
+      "pages": [
+        "line/line",
+        "color/color",
+        "view/view",
+        "position/position",
+        "animation/animation"
+      ]
+    },
+    {
+      "root": "pages_two",
+      "name": "pages_two",
+      "pages": [
+     
+        "window/window",
+        "swiper/swiper",
+        "drawer/drawer",
+        "commonSidebar/commonSidebar",
+        "radio/radio",
+        "navigation-lsz/navigation-lsz",
+        "tag/tag",
+        "advertising/advertising",
+        "button/button",
+        "icon/icon",
+        "time/time",
+        "map/map"
+      ]
+    },
+    {
+      "root": "pages_three",
+      "name": "pages_three",
+      "pages": [
+          "bcmusic/bcmusic"
+      ]
+    },
+    {
+      "root": "pages_four",
+      "name": "pages_four",
+      "pages": [
+        "own_about/own_about"
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/custom/custom": {
+      "network": "all",
+      "packages": [
+        "pages_two"
+      ]
+    }
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "requiredBackgroundModes": [
+    "audio"
+  ]
+}

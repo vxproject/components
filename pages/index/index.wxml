@@ -1,0 +1,57 @@
+  <image mode='widthFix' class='w-all ' src='{{src}}' />
+  <view class='bc-white p-20 between  center'>
+    基础列表
+  </view>
+
+  <view class='mt-30 '>
+    <view class="  {{type? bbstyle?'px-30 ':'px-30' : bbstyle?' bc-white  ':'px-30 bc-white' }}  transition">
+      <view class="{{type? bbstyle?' radius-15 hidden':'px-30 bc-white  radius-15 hidden' : '' }} transition">
+        <view wx:for="{{arr}}" wx:key="" class=" transition between py-30 center bb {{type?bbstyle?' bc-white pl-20  pr-10 ':'' :bbstyle?' pl-30 pr-20':'' }} " catchtap='_chooseOne' data-index="{{index}}">
+          <view class='row-nowrap center w-all '>
+            <image mode='aspectFill' src='{{item.src}}' class="shrink mr-20" style='width:{{imgsize}}rpx;height:{{imgsize}}rpx' hidden='{{!item.src}}' />
+            <view class='line-1 wp-70' style='color:{{color}};font-size:{{size}}rpx;'>{{item.title}}</view>
+          </view>
+
+          <i class="icon-40 iconfont   rotate-270 transition  " style="font-size:{{iconsize}}rpx;color:{{arrowcolor}}" wx:if="{{arrow}}"></i>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='mt-30 px-30'>
+    <view class='center middle   fc-white py-20 radius-8' style='background:{{color}}' catchtap='catchreset'>重置</view>
+  </view>
+
+  <view class='bc-white p-30 mt-30  ' style='color:{{color}}'>
+    <view class='py-20 between center'>
+      <view>长底边</view>
+      <switch bindchange="setno_1" checked='{{bbstyle}}' color="{{color}}"  />
+    </view>
+    <view class='py-20 between center'>
+      <view>卡片</view>
+      <switch bindchange="setno_2" checked='{{type}}'  color="{{color}}"/>
+    </view>
+    <view class='py-20 between center'>
+      <view>箭头</view>
+      <switch bindchange="setno_3" checked='{{arrow}}'  color="{{color}}"/>
+    </view>
+    <view class='py-20  row-nowrap center between'>
+      <view class='shrink row'>主题颜色--{{color}}</view>
+      <view catchtap='changecolor' class='radius-8  hidden  px-20 py-10  fc-white'  style='background:{{color}};'>切换</view>
+    </view>
+    <view class='py-20  row-nowrap center between'>
+      <view class='shrink row'>字体大小--{{size}}rpx</view>
+      <slider bindchanging='bindchanging' class='w-all' value='{{size}}' max='60' min='26' block-size="20" selected-color="{{color}}"/>
+    </view>
+    <view class='py-20  row-nowrap center between'>
+      <view class='shrink row'>图标宽高--{{imgsize}}rpx</view>
+      <slider bindchanging='changimg' class='w-all h-32' value='{{imgsize}}' max='80' min='30' block-size="20" selected-color="{{color}}" />
+    </view>
+    <view class='py-20  row-nowrap center between' wx:if="{{arrow}}">
+      <view class='shrink row'>箭头大小--{{iconsize}}rpx</view>
+      <slider bindchanging='changarrow' class='w-all' value='{{iconsize}}' max='80' min='30' block-size="20" selected-color="{{color}}"/>
+    </view>
+  </view>
+  <view class='tabbar_height w-all'></view>
+  <window id="toast" title="提示" content="努力完善中···敬请期待" type="toast">
+  </window>
+  

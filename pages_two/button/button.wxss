@@ -1,0 +1,6 @@
+/* pages/button/button.wxss */
+.btn{
+  border-radius: 0;
+  position: static;
+  border: 0.5rpx solid  springgreen;
+}

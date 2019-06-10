@@ -1,0 +1,22 @@
+<view class='shrink bc-white px-30 fc-green'>class命名：bb</view>
+<view class='row-nowrap  between p-30 bc-white center'>
+   <view class='mr-30 shrink'>1rpx的细线</view>
+   <view class='w-all bb'></view>
+</view>
+<view class='shrink bc-white px-30 fc-green'>class命名：bb_xu</view>
+<view class='row-nowrap  between p-30 bc-white center'>
+   <view class='mr-30 shrink'>1rpx的虚线</view>
+   <view class='w-all bb_xu'></view>
+</view>
+<view class='shrink bc-white px-30 fc-green'>class命名：border_b</view>
+<view class='row-nowrap  between p-30 bc-white center'>
+   <view class='mr-30 shrink'>1rpx的普通线</view>
+   <view class='w-all border_b'></view>
+</view>
+<view class='shrink bc-white px-30 fc-green'>class命名：border_xu</view>
+<view class='row-nowrap  between p-30 bc-white center'>
+   <view class='mr-30 shrink'>1rpx的普通虚线</view>
+   <view class='w-all border_xu'></view>
+</view>
+ 
+<view class='bc-white py-30 center middle fc-green'>推荐使用细线（微信、支付宝等都是细线）</view>

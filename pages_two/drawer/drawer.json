@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "drawer-lsz": "/components/Drawer-lsz/Drawer-lsz"
+  
+  }
+}

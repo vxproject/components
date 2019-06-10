@@ -1,0 +1,10 @@
+<index_lsz id="indexpage" wx:if="{{selectId==0}}" catchchange="catchchange"  catchreset="catchreset"></index_lsz>
+<custom_lsz wx:if="{{selectId==1}}"></custom_lsz>
+<media_lsz wx:if="{{selectId==2}}"></media_lsz>
+<own_lsz wx:if="{{selectId==3}}"></own_lsz>
+<view class='row-nowrap around  tabbar_height  tabbar center bc-white z-max  w-all fixed' style='bottom:0;left:0;'>
+  <view wx:for="{{list}}" wx:key="" class='column middle  center h-all w-all ' catchtap='chooseOne' data-index="{{index}}">
+    <i class=" shrink iconfont center middle wh-50 fs-50  {{selectId==index?item.iconPath:item.selectedIconPath}}" style="color:{{selectId==index?color:'#a3a3a3'}}"></i>
+    <view class="fs-22 " style="color:{{selectId==index?color:'#a3a3a3'}}">{{item.text}}</view>
+  </view>
+</view>

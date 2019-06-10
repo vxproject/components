@@ -1,0 +1,10 @@
+<image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
+<view class='bc-white px-30 fs-30'>
+   <view wx:for="{{music}}" wx:key="" class=' row_nowrap between center p-20  bb '  catchtap='chooseOne' data-index="{{index}}">
+     <view style='color:{{color}}'>{{item.title}}</view>
+
+     <image mode='aspectFill' class="wh-80 radius-p5  p-10"  style="{{item.flag?'animation:circle  5s  infinite  linear':'background-color:#f5f5f5'}}" src='../../img/music.png'/>
+   </view>
+</view>
+
+

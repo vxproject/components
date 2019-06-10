@@ -1,0 +1,14 @@
+/* pages/icon/icon.wxss */
+@import "/components/icon.wxss";
+
+.py-40{
+  padding: 40rpx 0;
+}
+@keyframes show{
+  0% {
+    transform: translateX(100%);
+  }
+  100%{
+    transform: translateX(0%)
+  }
+}

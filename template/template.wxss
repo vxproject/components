@@ -1,0 +1,108 @@
+.showmodel{
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  background-color: rgba(75, 73, 73, 0.6);
+  pointer-events: auto;
+  z-index: 2000;
+}
+.z-3000{
+  z-index: 3000;
+}
+.fixed{
+  position: fixed;
+   
+}
+.relative{
+  position: relative;
+}
+.absolute{
+  position: absolute;
+}
+.bc-white{
+  background: white;
+}
+.bc-f5{
+  background: #f5f5f5;
+}
+
+.middle{
+  display: flex ; 
+  justify-content: center ;
+}
+.w-all{
+  width: 100%;
+}
+.wp-60{
+  width: 60%;
+}
+.wp-70{
+  width: 70%;
+}
+.h-570{
+  height: 570rpx;
+}
+.shrink{
+  flex-shrink: 0;
+}
+.radius-15{
+  border-radius: 15rpx;
+}
+.radius-50{
+  border-radius: 50rpx;
+}
+.block{
+  display: block;
+}
+.radius-img{
+  border-top-left-radius: 15rpx;
+  border-top-right-radius: 15rpx;
+}
+.radius-button{
+  border-bottom-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+}
+.pt-100{
+  padding-top: 100rpx;
+}
+.py-25{
+  padding-top: 25rpx;
+  padding-bottom: 25rpx;
+}
+.py-20{
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.pt-25{
+  padding-top: 25rpx;
+}
+.px-20{
+  padding-left: 20rpx;
+  padding-right: 20rpx;
+}
+.px-30{
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.fs-32{
+  font-size: 32rpx;
+}
+.fc-white{
+  color: #fff;
+}
+.line-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+}
+.hidden{
+  overflow: hidden;
+}
+.auto{
+  overflow: auto;
+}

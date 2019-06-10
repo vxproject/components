@@ -1,0 +1,15 @@
+/* pages/own/own.wxss */
+@import "/components/private.wxss";
+.btn_contact{
+   background: #fff;
+   padding: 30rpx;
+}
+.btn_cont{
+  font-size: 32rpx;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rpx;
+  border-radius: 12rpx;
+}

@@ -1,0 +1,40 @@
+<!-- 普通轮播 -->
+<view class='flex relative' wx:if="{{type=='swiper'}}">
+  <swiper autoplay='{{autoplay}}' current="{{current}}" interval='{{interval}}' duration='{{duration}}' circular="{{circular}}" display-multiple-items='{{dis_mul_items}}' vertical='{{vertical}}' style='height:{{height}}rpx;width:100%' bindchange='bindchange'
+    class=''>
+    <block wx:for="{{list}}" wx:key="">
+      <swiper-item>
+        <image src='{{item}}' mode='width' style='height:100%;width:100%;' catchtap='_catchtap' data-item='{{item}}' data-index="{{index}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='absolute middle w-all row-nowrap' style='bottom:20rpx;left:0' hidden='{{!ind_dots}}'>
+    <view wx:for="{{list}}" wx:key="" class="mx-10 {{ind_type=='heart'? nowindex==index?ind_type:'heartG' :ind_type}}  " style="background:{{  ind_type=='heart'?'':nowindex==index? ind_active_color : ind_color}}  ">
+    </view>
+  </view>
+</view>
+<!-- 卡片式轮播 -->
+<view class='flex relative' wx:if="{{type=='card'}}">
+  <swiper autoplay='{{autoplay}}' current="{{current}}" interval='{{interval}}' duration='{{duration}}' circular="{{circular}}" display-multiple-items='{{dis_mul_items}}' vertical='{{vertical}}' style='height:{{height}}rpx;width:100%' bindchange='bindchange'
+    class=''>
+    <block wx:for="{{list}}" wx:key="">
+      <swiper-item class=" swiper-item  {{ind_dots?'':'padding'}}">
+        <image src="{{item}}" mode='aspectFill' class="{{nowindex==index?'none':'transform'}}  " style='height:100%;width:100%;' catchtap='_catchtap' data-item='{{item}}' data-index="{{index}}">
+        </image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='absolute middle w-all row-nowrap' style='bottom:20rpx;left:0' hidden='{{!ind_dots}}'>
+    <view wx:for="{{list}}" wx:key="" class="mx-10 {{ind_type=='heart'? nowindex==index?ind_type:'heartG' :ind_type}}  " style="background:{{  ind_type=='heart'?'':nowindex==index? ind_active_color : ind_color}}  ">
+    </view>
+  </view>
+</view>
+
+<!-- 层叠式 -->
+<view wx:if="{{type=='tower'}}">
+  <view class="tower-swiper" bindtouchmove="_towerMove" bindtouchstart="_towerStart" bindtouchend="_towerEnd">
+    <view class='tower-item {{item.zIndex==1?"none":""}}' wx:for="{{list}}" wx:key style='transform: scale({{0.5+item.zIndex/10}});margin-left:{{item.mLeft*100-150}}rpx;z-index:{{item.zIndex}}'>
+      <view class='bg-img shadow-blur' style="background-image:url({{item}})"></view>
+    </view>
+  </view>
+</view>

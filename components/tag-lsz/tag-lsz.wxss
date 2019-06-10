@@ -1,0 +1,16 @@
+/* components/tag-lsz/tag-lsz.wxss */
+@import "/components/private.wxss";
+.block{
+  display: inline;
+  /* height: 32rpx; */
+  line-height: 32rpx;
+  text-align: center;
+  padding: 0 8rpx;
+}
+.border{
+  border: 1rpx solid ;
+ 
+}
+.radius-32{
+  border-radius: 32rpx;
+}

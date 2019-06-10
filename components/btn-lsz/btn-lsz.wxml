@@ -1,0 +1,2 @@
+<view class=" btn-{{size}} btn  " style="border-radius:{{radius}}rpx ;background:{{bc_color}};border-color:{{bc_color?bc_color:color?color:''}};color:{{bc_color?'#ffffff':color?color:''}}" catchtap='catchtap'>
+  {{content}}</view>

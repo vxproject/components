@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "btn-lsz":"/components/btn-lsz/btn-lsz",
+    "window": "/components/window/window"
+  }
+}

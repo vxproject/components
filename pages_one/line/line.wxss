@@ -1,0 +1,41 @@
+/* pages_one/line/line.wxss */
+.bb {
+  position: relative;
+}
+/* #b6c2ce */
+.bb::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border-bottom: 1rpx solid #000000;
+  transform-origin: 0 0;
+}
+.bb_xu {
+  position: relative;
+}
+/* #b6c2ce */
+.bb_xu::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border-bottom: 1rpx dashed #000000;
+  transform-origin: 0 0;
+}
+.border_b{
+  border-bottom: 1rpx solid  #000000;
+}
+.border_xu{
+  border-bottom: 1rpx dashed  #000000;
+}

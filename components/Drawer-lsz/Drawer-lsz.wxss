@@ -1,0 +1,247 @@
+/* components/Drawer/Drawer.wxss */
+@import "/components/private.wxss";
+@import "/components/icon.wxss";
+
+/* 抽屉式公用 */
+
+.transition {
+  transition: all 0.6s;
+}
+
+.none {
+  pointer-events: none;
+}
+
+.scale1 {
+  transform: scale(1, 1);
+}
+
+/* 透明 */
+
+.opacity {
+  opacity: 0;
+}
+
+
+
+/* 主视图样式 */
+
+.window {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  z-index: 500;
+  display: flex;
+}
+
+/* 向右时 */
+
+.left-zero {
+  left: 0;
+}
+
+/* 向右时 */
+
+.left-eight {
+  left: 80%;
+}
+
+/* 向左滑动时 */
+
+.right-zero {
+  right: 0;
+}
+
+/* 向左滑动时 */
+
+.right-eight {
+  right: 80%;
+}
+
+/* 向右时 */
+
+.scale9 {
+  transform: scale(0.9);
+  transform-origin: 0;
+}
+
+/* 向左滑动时 */
+
+.scaleright {
+  transform: scale(0.9);
+  transform-origin: right center;
+}
+
+/* 侧视图样式 */
+
+.leftwindow {
+  z-index: 500;
+  top: 0;
+  bottom: 0;
+  background: rgb(184, 228, 184);
+  display: flex;
+  width: 80%;
+}
+
+/* 向右滑动时 */
+
+.translateleftscale {
+  transform: scale(0.9) translateX(-100%);
+}
+
+/* 向右滑动时 */
+
+.translateleft {
+  transform: translateX(-100%);
+}
+
+/* 向左滑动时 */
+
+.translaterightscale {
+  transform: scale(0.9) translateX(100%);
+}
+
+/* 向左滑动时 */
+
+.translateright {
+  transform: translateX(100%);
+}
+
+/* 阴影的样式 （抽屉式）*/
+
+/* 向右滑动时 */
+
+.leftsmall {
+  display: flex;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  z-index: 600;
+}
+
+/* 向左滑动时 */
+
+.rightsmall {
+  display: flex;
+  position: fixed;
+  left: 0;
+  height: 100%;
+  z-index: 600;
+}
+
+/* 普通式 */
+
+.general-right {
+  right: 100%;
+}
+
+.general-direc-right {
+  right: 20%;
+}
+
+.general-left {
+  left: 100%;
+}
+
+.general-direc-left {
+  left: 20%;
+}
+
+.general-top {
+  top: 100%;
+  width: 100%;
+}
+
+.general-direc-top {
+  top: 60%;
+  width: 100%;
+}
+
+.general-bottom {
+  bottom: 100%;
+  width: 100%;
+}
+
+.general-direc-bottom {
+  bottom: 60%;
+  width: 100%;
+}
+
+/* 阴影样式（普通） */
+
+.general-small-right {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.general-smalldir-right {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  right: 0;
+  width: 20%;
+  z-index: 600;
+}
+
+.general-small-left {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.general-smalldir-left {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  width: 20%;
+  z-index: 600;
+}
+
+.general-small-top {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  width: 100%;
+  z-index: 600;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.general-smalldir-top {
+  display: flex;
+  position: fixed;
+  height: 60%;
+  top: 0;
+  width: 100%;
+  z-index: 600;
+}
+.general-small-bottom {
+  display: flex;
+  position: fixed;
+  height: 100%;
+  bottom: 0;
+  width: 100%;
+  z-index: 600;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.general-smalldir-bottom {
+  display: flex;
+  position: fixed;
+  height: 60%;
+  bottom: 0;
+  width: 100%;
+  z-index: 600;
+}

@@ -1,0 +1,61 @@
+<view class='p-30  bc-white fs-60  center middle fc-red fw-bold'>布局</view>
+<view class='center middle p-30 bc-white fc-green'>横着排版</view>
+<view class='row-nowrap bc-white p-30 middle fc-white'>
+  <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30'>横着平均排版</view>
+<view class='row-nowrap bc-white p-30 middle fc-white around'>
+  <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30'>横着靠边平均排版</view>
+<view class='row-nowrap bc-white p-30 middle fc-white between'>
+  <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30 '>竖着排版(高度680rpx)</view>
+<view class='p-30 bc-white'>
+  <view class='column  bc-white  center fc-white h-680 b '>
+    <view wx:for="{{3}}" wx:key="" class="wh-180 shrink center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
+  </view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30  '>竖着平均排版(高度680rpx)</view>
+<view class='p-30 bc-white'>
+  <view class='column  bc-white  center fc-white around h-680 b '>
+    <view wx:for="{{3}}" wx:key="" class="wh-180 shrink center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
+  </view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30  '>竖着靠边平均排版(高度680rpx)</view>
+<view class='p-30 bc-white'>
+  <view class='column  bc-white  center fc-white between h-680 b '>
+    <view wx:for="{{3}}" wx:key="" class="wh-180 shrink center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
+  </view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30  '>居中对齐</view>
+<view class=' bc-white center  around b '>
+  <view class='fs-60'>你好</view>
+  <view class='fs-50'>你好</view>
+  <view class='fs-40'>你好</view>
+</view>
+<view class='center middle p-30 bc-white fc-green mt-30  '>基线对齐</view>
+<view class=' bc-white baseline  around b '>
+  <view class='fs-60'>你好</view>
+  <view class='fs-50'>你好</view>
+  <view class='fs-40'>你好</view>
+</view>
+
+<view class='p-30  bc-white fs-60  center middle fc-red fw-bold mt-30'>定位</view>
+<view class='p-30 bc-white '>绿色模块相对模块A进行定位</view>
+<view class='p-30 bc-orange middle '>模块B
+  <view class='wh-300 bc-red fc-white middle center relative'>模块A
+    <view class='absolute wh-30 bc-green radius-p5' style='bottom:20rpx;right:20rpx;'></view>
+  </view>
+</view>
+<view class='p-30 bc-white mt-30'>绿色模块相对模块B进行定位</view>
+<view class='p-30 bc-orange middle  relative'>模块B
+  <view class='wh-300 bc-red fc-white middle center '>模块A </view>
+  <view class='absolute wh-30 bc-green radius-p5' style='bottom:20rpx;right:20rpx;'></view>
+</view>
+<view class='p-30 bc-white mt-30'>绿色模块相对屏幕进行定位</view>
+<view class='p-30 bc-orange middle  '>模块B
+  <view class='wh-300 bc-red fc-white middle center '>模块A </view>
+  <view class=' wh-30 bc-green radius-p5 fixed' style='bottom:20rpx;right:20rpx;'></view>
+</view>

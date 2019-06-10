@@ -1,0 +1,46 @@
+<view class='p-30'>
+  <btn-lsz content="默认状态"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz bc_color="{{color}}" size="xs"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz bc_color="{{color}}" size="xs" radius="10" content="mini"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz color="{{color}}" size="xs" radius="10" content="mini"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz color="{{color}}" size="s" content="一般"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz bc_color="{{color}}" size="s" content="一般"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz color="{{color}}" size="s" radius="10" content="一般"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz bc_color="{{color}}" size="s" radius="10" content="一般"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz color="{{color}}" size="m" content="普通"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz bc_color="{{color}}" size="m" radius="10" content="普通"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz color="{{color}}" size="l" content="最大"></btn-lsz>
+</view>
+<view class='p-30'>
+  <btn-lsz bc_color="{{color}}" size="l" radius="10" content="最大"></btn-lsz>
+</view>
+<!-- <button class='btn   center  middle   h-100  w-all'>按钮</button> -->
+<view wx:for="{{10}}" wx:key="" class='p-20  '>
+  <view class='middle'>第--{{item+1}}--项</view>
+  <view class=' py-30 middle' >
+    <btn-lsz bc_color="{{color}}" size="s" radius="10" content="一般"  catchClick="catchClick" data-index="{{index}}"></btn-lsz>
+  </view>
+
+</view>
+
+<window id="window" title="您好" content="选择的是第--{{index}}---位" ></window>

@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+      "wxinput": "/components/input/input",
+      "window":"/components/window/window"
+  }
+}

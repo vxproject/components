@@ -1,0 +1,9 @@
+<!-- 媒体页面 -->
+<image mode='widthFill' class='shrink  w-all ' src='{{src}}'/>
+
+<list-lsz arrayList="{{arrayList}}" arrow color="{{color}}" arrowcolor="{{arrowcolor}}" catchchooseOne="catchchooseOne"></list-lsz>
+<view class='tabbar_height w-all'></view>
+
+
+ <window id="toast" title="提示" content="努力完善中···敬请期待" type="toast">
+  </window>

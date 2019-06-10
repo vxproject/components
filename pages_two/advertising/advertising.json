@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "adver-lsz":"/components/advertising-lsz/advertising-lsz",
+    "window": "/components/window/window"
+  }
+}

@@ -1,0 +1,12 @@
+<view class='bc-white row  p-30 around'>
+  <view wx:for="{{68}}" wx:key="" class="wp-20 b  px-30 m-10  " style="animation: show  {{index*0.2+2}}s 1">
+    <view class=' py-40 w-all  '>
+      <view class='middle'>
+        <i class="icon-{{index}}  iconfont  fs-50   " style='color:{{color}}'></i>
+      </view>
+      <view class='middle  py-10'  style='color:{{color}}'>icon-{{index}}</view>
+    </view>
+
+  </view>
+
+</view>

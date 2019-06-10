@@ -1,0 +1,25 @@
+<view class='row  h-360  relative middle fc-mauve center ' style='  background-color: greenyellow;'>
+  <image src='https://6c73-lszmusic-dsdxp-1259095491.tcb.qcloud.la/images/wave.gif?sign=131551e31dc290133c699268ded285d3&t=1557456419' style='width:100%;height:50%;bottom:0;left:0;' mode='widthFill' class=' absolute image' /> 微信小程序
+</view>
+
+
+<view class=' p-20 row  around'>
+  <view wx:for="{{array}}" wx:key="" class="fc-white  relative my-30 wp-48 middle center bc-{{item.color}} radius-10  " style='animation: show {{(index+1)*0.2+2}}s  1;'>
+    <view class="relative w-all py-20 h-100 center middle " catchtap='nav' data-index="{{index}}">
+      <view class="title ">{{item.title}}</view>
+    </view>
+
+  </view>
+</view>
+<view style='color:{{color}}'>
+  <wxinput title="姓名" catchinput="catchinput"></wxinput>
+  <wxinput placeholder="请输入信息" type="idcard" title="年龄及性别"></wxinput>
+  <view class='tabbar_height w-all'></view>
+</view>
+
+
+<view class='fixed ' style='bottom:180rpx;right:50rpx;z-index:1000;' catchtap='navMusic'>
+  <image mode='aspectFill' class='wh-80 radius-p5 p-10' src='../../img/music.png' style="{{index==id?'animation:circle  5s  infinite  linear':'background-color:#f5f5f5'}}" />
+</view>
+<window id="toast" title="提示" content="努力完善中···敬请期待" type="toast">
+</window>

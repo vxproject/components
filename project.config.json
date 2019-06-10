@@ -1,0 +1,88 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.6.2",
+	"appid": "wx21e7db252de9421d",
+	"projectname": "Demo2",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 5,
+			"list": [
+				{
+					"id": -1,
+					"name": "徽章",
+					"pathName": "pages/tag/tag",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "按钮",
+					"pathName": "pages/button/button",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "广告",
+					"pathName": "pages/advertising/advertising",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图标",
+					"pathName": "pages/icon/icon",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "导航",
+					"pathName": "pages/navigation-lsz/navigation-lsz",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "图标",
+					"pathName": "pages_two/icon/icon",
+					"scene": null
+				}
+			]
+		}
+	}
+}

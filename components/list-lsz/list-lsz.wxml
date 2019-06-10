@@ -1,0 +1,11 @@
+<view class="  {{type? bbstyle?'px-30 ':'px-30' : bbstyle?' bc-white  ':'px-30 bc-white' }}  transition">
+  <view class="{{type? bbstyle?' radius-15 hidden':'px-30 bc-white  radius-15 hidden' : '' }} transition">
+    <view wx:for="{{arrayList}}" wx:key=""  class=" transition between py-30 center bb {{type?bbstyle?' bc-white pl-20  ':'' :bbstyle?' pl-30 pr-10 ':'' }} " catchtap='_chooseOne'  data-index="{{index}}" data-item="{{item}}">
+      <view class='row-nowrap center w-all'>
+        <image mode='aspectFill' src='{{item.src}}' class="shrink mr-20" style='width:{{imgsize}}rpx;height:{{imgsize}}rpx' hidden='{{!item.src}}' />
+        <view class='line-1 wp-70' style='color:{{color}};font-size:{{size}}rpx;'>{{item.title}}</view>
+      </view>
+      <i class="icon-40 iconfont   rotate-270  " style="font-size:{{iconsize}}rpx;color:{{arrowcolor}}"  wx:if="{{arrow}}"></i>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+<!-- 抽屉式侧边栏 -->
+
+<drawer-lsz id="drawer" type sidebarType="{{flag}}" direction="{{direction}}" wx:if="{{ text=='抽屉'}}">
+  <view slot="window" class='fc-red w-all  '>
+    <view class=' middle center  w-all'>
+      <view class='p-10-30 radius-8 wp-40 middle fc-purple mt-100 bc-orange' catchtap='catchtap'>{{flag?'抽屉式侧边(2)':'抽屉式侧边(1)'}}</view>
+    </view>
+    <view class='middle'>主页</view>
+    <view class='middle my-20 ' wx:for="{{30}}" wx:key="">这里是主页--------内容这里是主页--------内容</view>
+
+  </view>
+  <view slot="leftwindow" class=' fc-red w-all p-30'>
+    <view class='middle'>侧边页</view>
+    <view class='middle my-20' wx:for="{{30}}" wx:key="">这里是侧边页------内容这里是侧边页------内容</view>
+  </view>
+  <view slot="small" class='fc-white  '>关闭区域
+
+  </view>
+</drawer-lsz>
+
+<!-- 普通形式侧边栏 -->
+<drawer-lsz direction="{{direction}}" wx:if="{{ text=='普通'}}" id="general">
+  <view slot="window" class='fc-red w-all  '>
+    <view class=' middle center  w-all'>
+      <view class='p-10-30 radius-8 wp-40 middle fc-purple mt-100 bc-orange' catchtap='catchtapputong'>普通侧边栏</view>
+    </view>
+    <view class='middle'>主页</view>
+    <view class='middle my-20 ' wx:for="{{30}}" wx:key="">这里是普通侧边栏主页--------内容*******</view>
+
+  </view>
+  <view slot="leftwindow" class=' fc-red w-all p-30'>
+    <view class='middle'>侧边页</view>
+    <view class='middle my-20' wx:for="{{30}}" wx:key="">这里是普通侧边页------内容*******</view>
+  </view>
+  <view slot="small" class='fc-green middle  w-all center'>关闭区域</view>
+
+</drawer-lsz>

@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "time-lsz":"/components/time-lsz/time-lsz"
+  }
+}

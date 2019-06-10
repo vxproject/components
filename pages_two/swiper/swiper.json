@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "wxswiper": "/components/swiper-lsz/swiper-lsz"
+  }
+}

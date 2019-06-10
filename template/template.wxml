@@ -1,0 +1,11 @@
+<template name="window_one">
+  <view class=" showmodel middle fs-32"  catchtouchmove='catchtouchmove'>
+   <view  class=' pt-100  wp-70 '  >
+    <image class=' {{flag?"bc-white":"bc-f5"}}  w-all h-570 shrink  radius-img block ' mode='aspectFill' src='{{item.src}}'  />
+    <view class='pt-25 px-20 bc-white  line-2  '>{{item.title}}</view>
+     <view class='py-25 middle bc-white w-all radius-button'> 
+      <view class='py-20   wp-60 middle radius-50   fc-white  '  style="background-color:{{item.btn_color}}">{{item.btn}}</view>
+     </view>
+   </view>
+  </view>
+</template>

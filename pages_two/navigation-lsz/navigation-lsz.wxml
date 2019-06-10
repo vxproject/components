@@ -1,0 +1,9 @@
+<image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
+<navigation-lsz bindchooseOne="chooseOne" arrayList="{{arr}}" lineWidth="60" itemindex="0" color="{{color}}"></navigation-lsz>
+<view class=' middle  py-30  ' >
+  选择第--<text style='color:{{color}}'>{{index}}</text>---项目
+</view>
+<view class='fs-50 p-30 my-20 fc-brown bc-white'>目录导航:</view>
+<view class='mb-30'>
+  <Catalog-lsz array="{{list}}" catchClick="carchClick"></Catalog-lsz>
+</view>

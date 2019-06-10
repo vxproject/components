@@ -1,0 +1,4 @@
+<!-- 徽章图标 -->
+<view class="block fs-24 border {{type=='no'?'': type=='base' ? 'radius-6':'radius-32'}}" style="border-color:{{bgColor? bgColor:color?color:'#000000'}};color:{{bgColor?'#ffffff':color?color:'#000000'}}; background:{{color?'#ffffff':bgColor?bgColor:'#ffffff'}} ">
+  <slot/>
+</view>

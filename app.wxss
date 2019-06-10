@@ -1,0 +1,29 @@
+/**app.wxss**/
+@import "/components/private.wxss";
+@import "/template/template.wxss";
+@import "/components/icon.wxss";
+
+page{
+  font-size: 32rpx;
+  background-color: rgba(170, 170, 170, 0.178);
+}
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/* 隐藏滚动条 (注意  这个不能放在自定义组件中，否则会报错，放在app.wxss中就能起到隐藏的作用)*/
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}
+image{
+  display: block;
+}

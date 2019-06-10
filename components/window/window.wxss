@@ -1,0 +1,144 @@
+/* components/second/second.wxss */
+@import "/components/icon.wxss";
+@import "/components/private.wxss";
+.mask {
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  /* 缩放比例 */
+  -webkit-transform: scale(1.186);
+  -o-transform: scale(1.186);
+  -ms-transform: scale(1.186);
+  transform: scale(1.186);
+  transition: all 0.3s;
+  /* 有没有点击事件 */
+  pointer-events: none;
+}
+
+.show {
+  opacity: 1;
+  transition-duration: 0.3s;
+  /* 缩放比例 */
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  /* 有没有点击事件 */
+  pointer-events: auto;
+}
+
+.window {
+  position: fixed;
+  top: 360rpx;
+  z-index: 1000;
+  width: 68%;
+  height: auto;
+  background-color: #fff;
+  border-radius: 8rpx;
+}
+
+/* 对话弹框 */
+
+.title {
+  text-align: center;
+  position: relative;
+}
+
+.p-15 {
+  padding: 15rpx;
+}
+
+.p-20 {
+  padding: 20rpx;
+}
+
+.cont {
+  padding: 30rpx 50rpx 30rpx 30rpx;
+  color: #9c9a9a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+}
+
+.btn {
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+}
+
+.btn::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border-top: 1rpx solid #7c7c7c;
+  transform-origin: 0 0;
+}
+
+.btn_left {
+  width: 50%;
+  padding: 25rpx 0;
+  text-align: center;
+  position: relative;
+}
+
+.btn_left::after {
+  content: "";
+  pointer-events: none;
+  box-sizing: border-box;
+  position: absolute;
+  width: 500%;
+  height: 500%;
+  transform: scale(0.2, 0.2);
+  left: 0;
+  top: 0;
+  border-right: 1rpx solid #7c7c7c;
+  transform-origin: 0 0;
+}
+
+.btn_right {
+  width: 50%;
+  padding: 25rpx 0;
+  text-align: center;
+}
+
+/*差号 样式*/
+
+/* .cancel {
+
+  margin: auto;
+  position: absolute;
+  top: 25rpx;
+  right: 25rpx;
+}
+
+.cancel::before, .cancel::after {
+  content: "";
+  position: absolute; 
+  height: 40rpx;
+  width: 4rpx;
+  top: 0;
+  right: 18rpx;
+  background: #f39800;
+}
+
+.cancel::before {
+  transform: rotate(45deg); 
+}
+
+.cancel::after {
+  transform: rotate(-45deg);
+} */

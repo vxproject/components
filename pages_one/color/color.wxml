@@ -1,0 +1,22 @@
+<view class='bc-white p-30 fc-66'>背景色（bc-）</view>
+<view class='row  p-30'>
+  <view wx:for="{{ColorList}}" wx:key="" class="  wp-33   {{index==14?'':'fc-white'}}">
+    <view class='p-20'>
+      <view class='{{item.name}}   py-30  radius-8 shadow '>
+        <view class='middle'>{{item.title}}</view>
+        <view class='middle'>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='bc-white p-30 fc-66'>字体色(fc-)</view>
+<view class='row  p-30'>
+  <view wx:for="{{fontList}}" wx:key="" class="  wp-33   ">
+    <view class='p-20'>
+      <view class="{{item.name}}   py-30  radius-8  {{index==14?'bc-a3':'bc-white'}}">
+        <view class='middle'>{{item.title}}</view>
+        <view class='middle'>{{item.name}}</view>
+      </view>
+    </view>
+  </view>
+</view>
