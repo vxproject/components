@@ -4,11 +4,11 @@
   <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
 </view>
 <view class='center middle p-30 bc-white fc-green mt-30'>横着平均排版</view>
-<view class='row-nowrap bc-white p-30 middle fc-white around'>
+<view class='row-nowrap bc-white p-30  fc-white around'>
   <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
 </view>
 <view class='center middle p-30 bc-white fc-green mt-30'>横着靠边平均排版</view>
-<view class='row-nowrap bc-white p-30 middle fc-white between'>
+<view class='row-nowrap bc-white p-30  fc-white between'>
   <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>
 </view>
 <view class='center middle p-30 bc-white fc-green mt-30 '>竖着排版(高度680rpx)</view>

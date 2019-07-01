@@ -3,6 +3,25 @@ let mapApi = require('/components/qqmap-wx-jssdk.js')
 let music=require('/utils/music.js')
 App({
   onLaunch: function () {
+    let updateManager = wx.getUpdateManager()
+
+    updateManager.onCheckForUpdate(function (res) {
+    })
+    updateManager.onUpdateReady(function () {
+      wx.showModal({
+        title: '更新提示',
+        content: '新版本已经准备好，是否重启应用？',
+        success: function (res) {
+          if (res.confirm) {
+            updateManager.applyUpdate()
+          }
+        }
+      })
+    })
+
+    updateManager.onUpdateFailed(function () {
+      // 新版本下载失败
+    })
       wx.getSystemInfo({  //全屏目时候 获取导航信息用的
         success: res=>{
           let custom = wx.getMenuButtonBoundingClientRect();
@@ -49,9 +68,9 @@ App({
   src: 'https://6c73-lszmusic-dsdxp-1259095491.tcb.qcloud.la/images/public/%E6%A0%91%E6%9C%A8.jpg?sign=c2cfb278c12a0229f2b0efca9671d183&t=1558434601',  
   color:'#9791f0',
   music: music.music, 
-  bcmusic: wx.createInnerAudioContext(),
+  bcmusic: wx.createInnerAudioContext(), 
   onShow() {
-    let index= wx.getStorageSync('index') ? wx.getStorageSync('index') : 0;
+    let index = wx.getStorageSync('index') ? wx.getStorageSync('index') : 0;
     this.bcmusic.autoplay = true;
     this.bcmusic.loop = true;
     this.bcmusic.title = this.music[index].title;

@@ -2,6 +2,22 @@
 <wxswiper list="{{imglist}}" ind_dots catchTap="catchTap" autoplay circular ind_type="heart"></wxswiper>
 <view class='m-40 fc-red'>·卡片形式</view>
 <wxswiper list="{{imglist}}" height="500" type="card" circular autoplay ind_color="blue" ind_active_color="green" ind_dots catchTap="catchTap"></wxswiper>
-<view class='m-40 fc-red'>·层叠形式（待更新...）</view>
-<wxswiper id='tower' list="{{imglist}}" height="500" type="tower" catchTap="catchTap" bindStart="bindStart"></wxswiper>
-
+<view class='m-40 fc-red'>·层叠形式（一）</view>
+<!-- 层叠式 一 -->
+<view class="tower-swiper" bindtouchmove="towerMove" bindtouchstart="towerStart" bindtouchend="towerEnd">
+  <view class="tower-item {{item.zIndex==1?'none':''}}" wx:for="{{swiperList}}" wx:key style="--index:{{item.zIndex}};--left:{{item.mLeft}}">
+    <view class="swiper-item">
+      <image src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </view>
+</view>
+<view class='m-40 fc-red'>·层叠形式（二）</view>
+<view class="tower-swiper2" bindtouchmove="towerMove2" bindtouchstart="towerStart2" bindtouchend="towerEnd2">
+  <view class="tower-item2 {{item.zIndex2==1?'none2':''}}" wx:for="{{swiperList}}" wx:key style="--index:{{item.zIndex2}};--left:{{item.mLeft2}}">
+    <view class="swiper-item2">
+      <image class='tower2_img2' src="{{item.url}}" mode="aspectFill" wx:if="{{item.type=='image'}}"></image>
+      <video src="{{item.url}}" autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:if="{{item.type=='video'}}"></video>
+    </view>
+  </view>
+</view>

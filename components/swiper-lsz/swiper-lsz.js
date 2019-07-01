@@ -7,7 +7,7 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    type: { //轮播图类型  swiper（普通样式） card（卡片样式） tower（层叠样式）
+    type: { //轮播图类型  swiper（普通样式） card（卡片样式） 
       type: String,
       value: 'swiper'
     },

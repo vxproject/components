@@ -2,7 +2,7 @@ const app = getApp();
 Component({
 
   data: {
-    src:'https://6c73-lszmusic-dsdxp-1259095491.tcb.qcloud.la/images/indexbc_img.png?sign=f68332243aaa14efff81e84738ac58a6&t=1557455993',
+    src: 'https://6c73-lszmusic-dsdxp-1259095491.tcb.qcloud.la/images/indexbc_img.png?sign=f68332243aaa14efff81e84738ac58a6&t=1557455993',
     arr: [{
       src: '/img/view.png',
       title: '视图'
@@ -28,7 +28,9 @@ Component({
     color: app.color,
     arrowcolor: app.color,
 
+
   },
+
   lifetimes: {
     attached() {
       // 在组件实例进入页面节点树时执行
@@ -45,9 +47,6 @@ Component({
 
   methods: {
 
-    onLoad() {
-      
-    },
     /**
      * 重置
      */
@@ -62,6 +61,8 @@ Component({
         color: "#9791f0",
         arrowcolor: "#9791f0",
       })
+      app.color = "#9791f0" ;
+      app.arrowcolor = "#9791f0" ;
       this.triggerEvent('reset', {})
     },
     /**
@@ -165,7 +166,7 @@ Component({
           break;
       }
     },
-   
+
   },
 
 
