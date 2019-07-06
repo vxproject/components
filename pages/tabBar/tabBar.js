@@ -38,7 +38,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-     
+ 
   },
 
   /**
@@ -48,8 +48,8 @@ Page({
     this.setData({
       color: "#9791f0"
     })
-   
-    console.info('重置-------按钮diaoyong', app.color)
+
+    console.info('重置-------按钮', app.color)
   },
   /**
    * 改变tabbar 颜色

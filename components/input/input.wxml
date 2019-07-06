@@ -1,9 +1,0 @@
-<!-- 输入框 -->
-<view class='bc-white'>
-  <view class=' row_nowrap  center px-10  bb'>
-    <view class='mr-10 center' hidden="{{colon}}" >{{title}}：</view>
-    <input class='input' value="{{value}}" confirm-type="{{confirmtype}}" focus="{{focus}}" type="{{type}}" maxlength='{{maxlength}}' placeholder='{{placeholder}}' placeholder-style="{{placeholderstyle}}" placeholder-class="{{placeholderClass}}" password="{{password}}"
-      disabled="{{disabled}}" cursor-spacing="{{cursorspacing}}" cursor="{{cursor}}" selection-start="{{selectionstart}}" selection-end="{{selectionend}}" adjust-position="{{adjustposition}}" bindinput="bindinput" bindfocus="bindfocus" bindblur="bindblur"
-      bindconfirm="bindconfirm"></input>
-  </view>
-</view>

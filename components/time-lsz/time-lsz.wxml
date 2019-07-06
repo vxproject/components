@@ -1,8 +1,8 @@
 <!-- 倒计时  时分秒形式 -->
 <view class='row-nowrap center ' style='color:{{color}};font-size:{{size}}rpx'>
-  <view class=' shrink {{border? radius?"border radius-8":"border":""}}  middle center ' style='border-color: {{border?color?color:"#797878":""}};width:{{size+4}}rpx;height:{{size+2}}rpx'>{{hour}}</view>
+  <view class=' shrink {{border? radius?"border radius-8":"border":""}} px-5  middle center ' style='border-color: {{border?color?color:"#797878":""}};'>{{hour}}</view>
   <view class='mx-10 shrink center '>:</view>
-  <view class='shrink {{border? radius?"border radius-8":"border":""}}  middle center' style='width:{{size+4}}rpx;height:{{size+2}}rpx'>{{minute}}</view>
+  <view class='shrink {{border? radius?"border radius-8":"border":""}} px-5 middle center' >{{minute}}</view>
   <view class='mx-10 shrink center '>:</view>
-  <view class=' shrink {{border? radius?"border radius-8":"border":""}}  middle center' style='width:{{size+4}}rpx;height:{{size+2}}rpx'>{{second}}</view>
+  <view class=' shrink {{border? radius?"border radius-8":"border":""}} px-5 middle center' >{{second}}</view>
 </view>

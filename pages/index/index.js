@@ -162,7 +162,9 @@ Component({
           })
           break;
         default:
-          this.toast.showmodel();
+          wx.navigateTo({
+            url: '/pages_one/animation/animation',
+          })
           break;
       }
     },

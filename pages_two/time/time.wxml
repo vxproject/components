@@ -25,7 +25,7 @@
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>再大</view>
-  <time-lsz border  radius size="80" color="#f37b1d"></time-lsz>
+  <time-lsz border  radius size="80"   color="#f37b1d"></time-lsz>
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>再大</view>

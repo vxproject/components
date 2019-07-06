@@ -38,7 +38,7 @@
   position: fixed;
   top: 360rpx;
   z-index: 1000;
-  width: 68%;
+  width: 80%;
   height: auto;
   background-color: #fff;
   border-radius: 8rpx;
@@ -68,13 +68,13 @@
   font-size: 30rpx;
 }
 
-.btn {
+.btn_wind {
   display: flex;
   flex-flow: row nowrap;
   position: relative;
 }
 
-.btn::after {
+.btn_wind::after {
   content: "";
   pointer-events: none;
   box-sizing: border-box;
@@ -115,30 +115,4 @@
   text-align: center;
 }
 
-/*差号 样式*/
 
-/* .cancel {
-
-  margin: auto;
-  position: absolute;
-  top: 25rpx;
-  right: 25rpx;
-}
-
-.cancel::before, .cancel::after {
-  content: "";
-  position: absolute; 
-  height: 40rpx;
-  width: 4rpx;
-  top: 0;
-  right: 18rpx;
-  background: #f39800;
-}
-
-.cancel::before {
-  transform: rotate(45deg); 
-}
-
-.cancel::after {
-  transform: rotate(-45deg);
-} */

@@ -34,7 +34,21 @@ Component({
   data: {
 
   },
+  lifetimes: {
+    attached() {
+      if (typeof array != Array){
+        this.setData({
+          array:[]
+        })
+      }
+      
+    },
+    ready() {
 
+    },
+    detached() {
+    },
+  },
   /**
    * 组件的方法列表
    */

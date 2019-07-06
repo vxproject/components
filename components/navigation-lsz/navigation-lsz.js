@@ -49,9 +49,6 @@ Component({
       this.setData({
         widthItem: widthItem
       })
-
-     
-
     },
     ready(){  //检测一下 初始下标的大小
       let index=0

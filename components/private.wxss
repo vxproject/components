@@ -676,7 +676,10 @@
   padding-top: 30rpx;
   padding-bottom: 30rpx;
 }
-
+.px-5{
+  padding-right: 5rpx;
+  padding-left: 5rpx;
+}
 .px-10 {
   padding-right: 10rpx;
   padding-left: 10rpx;
@@ -1084,4 +1087,42 @@ button::after {
   height: 100%;
   border-radius: 6rpx;
   overflow: hidden;
+}
+
+
+
+/* 按钮button */
+.btn{
+  border: 1rpx solid ;
+}
+.btn:active{
+  opacity: 0.5
+}
+.btn-xs{
+  padding: 8rpx  20rpx;
+  display: inline-block;
+}
+.btn-s{
+  width: 170rpx;
+  display: flex;
+  padding: 8rpx 20rpx; 
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.btn-m{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  flex-shrink: 0;
+}
+.btn-l{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80rpx;
+  flex-shrink: 0;
 }
