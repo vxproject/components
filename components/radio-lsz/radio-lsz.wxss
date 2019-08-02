@@ -1,24 +1,5 @@
 /* components/radio-lsz/radio-lsz.wxss */
 @import "/components/private.wxss";
-
-.radio {
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 500;
-}
-
-.hidden {
-  overflow: hidden;
-}
-.none{
-  pointer-events: none;
-}
-.maxH {
-  max-height: 540rpx;
-  overflow: auto;
-}
-
 .box {
   border-color: #797878;
 }

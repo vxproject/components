@@ -2,7 +2,7 @@
 <view class='row-nowrap fs-24  p-20 center bc-white'>
   <view class="  shrink">{{title}}</view>
   <view class='br  h-32 mx-20 '></view>
-  <swiper autoplay vertical circular interval="{{interval}}" duration='{{duration}}' style="height:{{height}}rpx" class='center w-all'>
+  <swiper autoplay vertical="{{!vertical}}" circular interval="{{interval}}" duration='{{duration}}' style="height:{{height}}rpx" class='center w-all'>
     <block wx:for="{{array}}" wx:key="">
       <swiper-item class="center h-60">
         <view class='fc-a3 line-1 w-all'  catchtap='chooseOne' data-index="{{index}}" data-item="{{item}}">{{item}}</view>

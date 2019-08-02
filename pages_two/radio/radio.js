@@ -1,5 +1,6 @@
 // pages/radio/radio.js
-let util = require('../../utils/util.js')
+let util = require('../../utils/util.js');
+const app = getApp();
 Page({
 
   /**
@@ -46,7 +47,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    this.setData({
+      color: app.color
+    })
 
 
   },
@@ -73,7 +76,7 @@ Page({
         })
       },
     })
-    
+
   },
   chooseBox() {
     console.info('复选择框弹出事件')
@@ -96,7 +99,7 @@ Page({
    */
   bindcancel(e) {
     this.setData({
-      flag:false,
+      flag: false,
     })
     console.info('选择后的结果：', e)
   },
@@ -107,7 +110,7 @@ Page({
     this.radio = this.selectComponent("#radio");
     this.radios = this.selectComponent("#radios");
     this.checkbox = this.selectComponent("#checkbox");
-  
+
   },
 
   /**
@@ -116,7 +119,7 @@ Page({
   onShow: function () {
 
   },
-  catchtouchmove(){
+  catchtouchmove() {
 
   },
   /**

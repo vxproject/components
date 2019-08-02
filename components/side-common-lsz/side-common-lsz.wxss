@@ -1,0 +1,125 @@
+@import "../private.wxss";
+@import "../icon.wxss";
+
+/* 向右 */
+
+.side_right_end {
+  width: 80%;
+  position: fixed;
+  left: 0;
+  height: 97vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.side_right_start {
+  width: 80%;
+  position: fixed;
+  left: -80%;
+  height: 97vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.i_right_end {
+  bottom: 40rpx;
+  right: 50rpx;
+}
+
+.i_right_start {
+  bottom: 50rpx;
+  right: 60rpx;
+}
+
+/* 向左 */
+
+.side_left_end {
+  width: 80%;
+  position: fixed;
+  right: 0;
+  height: 97vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.side_left_start {
+  width: 80%;
+  position: fixed;
+  right: -80%;
+  height: 97vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.i_left_end {
+  bottom: 40rpx;
+  left: 50rpx;
+}
+
+.i_left_start {
+  bottom: 50rpx;
+  left: 60rpx;
+}
+
+/* 向下 */
+
+.side_bottom_end {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 67vh;
+  bottom: 30vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.side_bottom_start {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 67vh;
+  bottom: 100vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.i_bottom_end {
+  bottom: 40rpx;
+  left: 50rpx;
+}
+
+.i_bottom_start {
+  bottom: 50rpx;
+  left: 60rpx;
+}
+/* 向上 */
+
+.side_top_end {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 67vh;
+  top: 30vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.side_top_start {
+  position: fixed;
+  left: 0;
+  right: 0;
+  height: 67vh;
+  top: 100vh;
+  background: #fff;
+  overflow: auto;
+}
+
+.i_top_end {
+  top: 40rpx;
+  left: 50rpx;
+}
+
+.i_top_start {
+  top: 50rpx;
+  left: 60rpx;
+}

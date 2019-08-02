@@ -1,5 +1,5 @@
 <!-- 处理bug，需要设置页面高度 -->
-<view style="{{flag?'height:'+windowHeight+'px;overflow:hidden;':'height:auto;'}}">
+<view style='color:{{color}}'>
   <view class='m-30' catchtap='chooseRadio'>【单项选择框（无默认选项）】</view>
   <radio id="radio" array="{{arr}}" checkedindex="3" bindcancel='bindcancel'></radio>
   <view class='m-30' catchtap='chooseRadios'>【单项选择框（有默认选项）】</view>

@@ -1,13 +1,8 @@
-<!-- 弹窗组件 -->
-
-<view class="mask  {{!isShow?'':'show'}}" catchtouchmove='catchtouchmove'  >
-  <view class="window ">
-    <view class= "title p-20">
-      {{title}}
-      <!-- <view class='' catchtap='_makeSure' data-title="cancel" hidden="{{type=='modal'}}"></view> -->
-      <i class="iconfont  icon-43 fs-60  absolute "  style="top:12rpx;right:25rpx;color:{{iconcolor}}"  hidden="{{type=='modal'}}" catchtap='_makeSure' data-title="cancel" ></i>
-    </view>
-    <view class= "cont {{type=='modal'?'':'btn_wind'}}">{{content}}</view>
+<view class="mask middle center z-500 {{!isShow?'hiddenview ':'showview rgba-6'}}" catchtouchmove='catchtouchmove'>
+  <view class='bc-white wp-80 radius-8 relative'>
+    <view class='middle p-20'>{{title}}</view>
+    <i wx:if="{{type=='toast'}}" class="iconfont  icon-43 fs-60  absolute " style="top:12rpx;right:25rpx;color:{{iconcolor}}" catchtap='_makeSure' data-title="cancel"></i>
+    <view class="cont {{type=='modal'?'':'btn_wind'}}">{{content}}</view>
     <view class='btn_wind' hidden="{{type!='modal'}}">
       <view class='btn_left' catchtap='_makeSure' data-title="cancel" style='color:{{cancelColor}}'>{{cancel}}</view>
       <view class='btn_right' catchtap='_makeSure' data-title="confirm" style='color:{{confirmColor}}'>{{confirm}}</view>

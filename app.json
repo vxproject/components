@@ -1,6 +1,9 @@
 {
   "pages": [
     "pages/tabBar/tabBar",
+        "pages/test/test",
+        
+    
     "pages/index/index",
     "pages/custom/custom",
     "pages/media/media",
@@ -34,8 +37,7 @@
      
         "window/window",
         "swiper/swiper",
-        "drawer/drawer",
-        "commonSidebar/commonSidebar",
+       
         "radio/radio",
         "navigation-lsz/navigation-lsz",
         "tag/tag",
@@ -50,7 +52,11 @@
       "root": "pages_three",
       "name": "pages_three",
       "pages": [
-          "bcmusic/bcmusic"
+          "bcmusic/bcmusic",
+          "commonSidebar/commonSidebar",
+          "side-common/side-common",
+          "side-drawer/side-drawer",
+          "side-drawerone/side-drawerone"
       ]
     },
     {

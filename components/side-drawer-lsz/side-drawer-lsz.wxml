@@ -1,0 +1,18 @@
+<!-- 抽屉式模式二侧边 -->
+<!-- 主页内容 -->
+<view class="bc-white transition  {{Lordflag ? 'side_'+direction+'_end':'side_'+direction+'_start'}}">
+  <view class='p-20'>
+    <slot name="side_content"></slot>
+  </view>
+</view>
+<!-- 侧边内容 -->
+<view class="bc-white transition {{Lordflag ? 'side_'+direction+'_vice_end' :'side_'+direction+'_vice_start'}}">
+  <view class='p-20'>
+    <slot name="side_vice"></slot>
+  </view>
+</view>
+<!-- 阴影 -->
+<view class=" transition z-500 {{Lordflag ?  'rgba-4 mask_'+direction:'mask_'+direction+'_end'}}" catchtap='catchtap'>
+  <i class="fc-white iconfont icon-15 fixed z-500 {{direction =='right' ?'rotate-180' :''}} {{Lordflag ? ' showview fs-50 icon_'+direction:'hiddenview icon_'+direction+'_end'}} " catchtap='catchtap'></i>
+  <slot name="side_end"></slot>
+</view>

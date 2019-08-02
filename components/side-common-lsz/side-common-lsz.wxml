@@ -1,0 +1,9 @@
+<!-- 普通侧边栏 -->
+<view class="mask transition rgba-4 z-500 {{Lordflag ?'showview':'hiddenview'}}" catchtouchmove='true' catchtap='catchtap'>
+</view>
+<scroll-view scroll-y class="py-20 relative transition z-1000 {{Lordflag ? 'side_'+direction+'_end' :'side_'+direction+'_start'}}" catchtouchmove='true'>
+  <view class='px-20'>
+    <slot name="side_content"> </slot>
+  </view>
+</scroll-view>
+<i wx:if="{{direction =='right' || direction =='left'}}" class="fc-white iconfont icon-15 fixed z-1000 {{direction =='right' ?'rotate-180' :''}}  {{Lordflag ?'showview fs-50 i_'+direction+'_end':'hiddenview i_'+direction+'_start'}}" catchtap='catchtap'></i>

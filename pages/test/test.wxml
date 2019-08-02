@@ -1,0 +1,14 @@
+<!-- <side-drawer-lsz id="tetx" direction="right">
+  <view slot="side_content">
+    <view wx:for="{{30}}" wx:key="" class='sss fc-white' catchtap='go'>向右侧边向右侧边向右侧边向右侧边{{index}}</view>
+  </view>
+</side-drawer-lsz> -->
+<side-drawer-lsz id="tetx" direction="left">
+  <view slot="side_content">
+    <view wx:for="{{30}}" wx:key="" class='sss fc-white' catchtap='go'>向左侧边向左侧边向左侧边向左侧边向左侧边{{index}}</view>
+  </view>
+  <view slot="side_vice">
+     <view wx:for="{{30}}" wx:key="" class='sss fc-white' >向左侧边向左侧边向左侧边向左侧边向左侧边{{index}}</view>
+  </view>
+</side-drawer-lsz>
+

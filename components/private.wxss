@@ -1,4 +1,5 @@
 /* tabBar */
+
 .tabbar_height {
   padding: 0;
   height: calc(100rpx + env(safe-area-inset-bottom) / 2);
@@ -9,6 +10,7 @@
 .tabbar {
   box-shadow: 0 -1rpx 2rpx rgba(0, 0, 0, 0.1);
 }
+
 /* 简单弹性布局 */
 
 .flex {
@@ -95,9 +97,11 @@
 }
 
 /* 字体大小 */
+
 .fs-22 {
   font-size: 22rpx !important;
 }
+
 .fs-24 {
   font-size: 24rpx !important;
 }
@@ -211,9 +215,11 @@
 .fc-a3 {
   color: #a3a3a3;
 }
-.fc-66{
+
+.fc-66 {
   color: #666;
 }
+
 .fc-white {
   color: #fff;
 }
@@ -279,16 +285,47 @@
 .bc-f5 {
   background-color: #f5f5f5;
 }
-.bc-a3{
+
+.bc-a3 {
   background-color: #a3a3a3;
 }
 
 .bc-black {
-  background-color: #333333;
+  background-color: #333;
 }
 
 .bc-white {
-  background-color: #ffffff;
+  background-color: #fff;
+}
+
+/* 背景透明度 */
+
+.rgba-0 {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.rgba-1 {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.rgba-2 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.rgba-3 {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.rgba-4 {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.rgba-5 {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.rgba-6 {
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* 背景渐变色格式 */
@@ -444,6 +481,7 @@
 .mb-80 {
   margin-bottom: 80rpx;
 }
+
 .mb-96 {
   margin-bottom: 96rpx;
 }
@@ -497,7 +535,10 @@
 }
 
 /* 宽高 */
-
+.wh-all {
+  width: 100%;
+  height: 100%;
+}
 .w-all {
   width: 100%;
 }
@@ -505,6 +546,7 @@
 .wp-20 {
   width: 20%;
 }
+
 .wp-33 {
   width: 33.3%;
 }
@@ -517,8 +559,16 @@
   width: 70%;
 }
 
+.wp-80 {
+  width: 80%;
+}
+
 .h-all {
   height: 100%;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .hp-20 {
@@ -631,10 +681,12 @@
   width: 50rpx;
   height: 50rpx;
 }
+
 .wh-60 {
   width: 60rpx;
   height: 60rpx;
 }
+
 .wh-80 {
   width: 80rpx;
   height: 80rpx;
@@ -676,10 +728,12 @@
   padding-top: 30rpx;
   padding-bottom: 30rpx;
 }
-.px-5{
+
+.px-5 {
   padding-right: 5rpx;
   padding-left: 5rpx;
 }
+
 .px-10 {
   padding-right: 10rpx;
   padding-left: 10rpx;
@@ -847,17 +901,19 @@
   border-bottom: 1rpx solid #b6c2ce;
   transform-origin: 0 0;
 }
+
 /* 阴影 (推荐使用伪元素方法)*/
-.shadow-6{
-   /* 上下、左右、阴影长度、颜色 */
-  box-shadow: 3rpx 5rpx 6rpx red;  
-  
+
+.shadow-6 {
+  /* 上下、左右、阴影长度、颜色 */
+  box-shadow: 3rpx 5rpx 6rpx red;
 }
 
-.shadow{
+.shadow {
   position: relative;
 }
-.shadow::before{
+
+.shadow::before {
   content: "";
   display: block;
   background-color: inherit;
@@ -873,13 +929,11 @@
   transform: scale(1, 1);
 }
 
-
-
 /*弹窗 隐藏、显示 */
 
 .hiddenview {
   opacity: 0;
-  transform: scale(1.18);
+  transform: scale(1.186);
   transition: all 0.3s ease-in 0s;
   pointer-events: none;
 }
@@ -888,6 +942,17 @@
   opacity: 1;
   transform: scale(1);
   transition: all 0.3s ease-in 0s;
+  pointer-events: auto;
+}
+
+/* 遮罩层 */
+
+.mask {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 /* 层级 */
@@ -1040,11 +1105,12 @@
   }
 }
 
-.button-hover{
-  transform: scale(1rpx,1rpx);
+.button-hover {
+  transform: scale(1rpx, 1rpx);
 }
 
 /* 重置button样式 */
+
 button {
   background-color: rgb(247, 247, 247);
   border-radius: 0rpx;
@@ -1059,6 +1125,7 @@ button::after {
 }
 
 /* 层叠式 一轮播图样式 */
+
 .tower-swiper {
   height: 420rpx;
   position: relative;
@@ -1089,28 +1156,31 @@ button::after {
   overflow: hidden;
 }
 
-
-
 /* 按钮button */
-.btn{
-  border: 1rpx solid ;
+
+.btn {
+  border: 1rpx solid;
 }
-.btn:active{
-  opacity: 0.5
+
+.btn:active {
+  opacity: 0.5;
 }
-.btn-xs{
-  padding: 8rpx  20rpx;
+
+.btn-xs {
+  padding: 8rpx 20rpx;
   display: inline-block;
 }
-.btn-s{
+
+.btn-s {
   width: 170rpx;
   display: flex;
-  padding: 8rpx 20rpx; 
+  padding: 8rpx 20rpx;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
 }
-.btn-m{
+
+.btn-m {
   width: 90%;
   display: flex;
   justify-content: center;
@@ -1118,7 +1188,8 @@ button::after {
   height: 80rpx;
   flex-shrink: 0;
 }
-.btn-l{
+
+.btn-l {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -1126,3 +1197,5 @@ button::after {
   height: 80rpx;
   flex-shrink: 0;
 }
+
+

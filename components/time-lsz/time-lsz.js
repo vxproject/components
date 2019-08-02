@@ -8,21 +8,21 @@ Component({
       type: Number,
       value: 86400
     },
-    border:{  //是否有边框   false 没有   true 有
-      type:Boolean,
-      value:false
+    border: {  //是否有边框   false 没有   true 有
+      type: Boolean,
+      value: false
     },
-    radius:{  //是否圆润角   false 直角  true 圆润角
-      type:Boolean,
-      value:false
+    radius: {  //是否圆润角   false 直角  true 圆润角
+      type: Boolean,
+      value: false
     },
-    color:{  //时间的字体颜色
-      type:String,
-      value:'#a3a3a3'
+    color: {  //时间的字体颜色
+      type: String,
+      value: '#a3a3a3'
     },
     size: {//时间的字体大小  (最大100号字体)
-      type:Number,
-      value:28
+      type: Number,
+      value: 28
     }
 
   },
@@ -33,13 +33,14 @@ Component({
   data: {
     hour: '00',
     minute: '00',
-    second: '00'
+    second: '00',
+    timer: null,
   },
   lifetimes: {
     attached() {
-      if ( this.data.size>100){
+      if (this.data.size > 100) {
         this.setData({
-          size:28
+          size: 28
         })
       }
       this.countDown(this.data.time)
@@ -50,6 +51,7 @@ Component({
     },
     detached() {
       // 在组件实例被从页面节点树移除时执行
+      clearInterval(this.data.timer);
     },
   },
 
@@ -59,8 +61,8 @@ Component({
   methods: {
 
     countDown(times) {
-      let timer = null;
-      timer = setInterval(_ => {
+
+      this.data.timer = setInterval(_ => {
         var
           hour = 0,
           minute = 0,
@@ -88,7 +90,7 @@ Component({
           minute: '00',
           second: '00'
         })
-        clearInterval(timer);
+        clearInterval(this.data.timer);
       }
 
     }

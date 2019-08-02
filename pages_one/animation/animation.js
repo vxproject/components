@@ -1,4 +1,5 @@
 // pages_one/animation/animation.js
+const app = getApp();
 Page({
 
   /**

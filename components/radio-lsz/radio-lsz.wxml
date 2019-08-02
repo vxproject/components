@@ -1,18 +1,16 @@
 <!-- 选择框 -->
-
-  <view class="fixed w-all bc-window radio middle  {{flag?'showview hidden':'hiddenview  '}} " catchtouchmove='catchtouchmove'>
-  </view>
-
-  <view class="maxH  wp-70 bc-white radius-8 fixed py-30 z-1000  {{flag?'showview':'hiddenview'}}" style='top:200rpx;left:15%;'>
-    <view wx:for="{{array}}" wx:key="" class='row-nowrap between center h-80 px-30' catchtap='_chooseOne' data-index="{{index}}" data-item="{{item}}">
-      <view class='w-240 line-1'>{{item.title}}</view>
-      <view class="wh-40  box  checkTypebox checkType{{checkType}} middle center">
-        <icon size='20' type="success_no_circle" hidden='{{!item.flag}}' />
+<view class="fixed middle  center mask z-500 rgba-6 {{flag ?'showview':'hiddenview' }}" style='top:0;left:0' catchtouchmove='catchtouchmove'>
+  <view class='wp-70 column center'>
+    <scroll-view scroll-y class='bc-white  radius-8 p-30' style='max-height: 560rpx;'>
+      <view wx:for="{{array}}" wx:key="" class='row-nowrap between center h-80 ' catchtap='_chooseOne' data-index="{{index}}" data-item="{{item}}">
+        <view class='w-240 line-1'>{{item.title}}</view>
+        <view class="wh-40  box  checkTypebox checkType{{checkType}} middle center">
+          <icon size='20' type="success_no_circle" hidden='{{!item.flag}}' />
+        </view>
       </view>
+    </scroll-view>
+    <view class='mt-30 middle ' catchtap='_hidden'>
+      <icon size='24' type='cancel' color='#ffffff' />
     </view>
   </view>
-
-
-  <view class="fixed middle z-1000 w-all {{flag?'showview':'hiddenview'}}" style="top:{{ array.length>7? 850 : array.length*80+290}}rpx;" catchtap='_hidden'>
-    <icon size='24' type='cancel' color='#ffffff' />
-  </view>
+</view>

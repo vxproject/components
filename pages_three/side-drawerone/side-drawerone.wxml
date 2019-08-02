@@ -1,0 +1,9 @@
+<!-- 抽屉式模式一侧边 -->
+<side-drawer-lsz id="drawer" direction="{{direction}}">
+  <view slot="side_content">
+    <view wx:for="{{30}}" wx:key="" style='color:{{color}}' class='middle h-120 center ' catchtap='catchtap' >{{txt}}{{txt}}{{txt}}{{txt}}</view>
+  </view>
+  <view slot="side_vice">
+    <view wx:for="{{30}}" wx:key="" class='middle py-30 fs-30 fc-orange'>测试内容</view>
+  </view>
+</side-drawer-lsz>

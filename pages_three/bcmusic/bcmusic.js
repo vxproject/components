@@ -8,7 +8,7 @@ Page({
   data: {
     src: app.src,
     music: app.music,
-    color:app.color,
+   
   },
 
   /**
@@ -19,7 +19,8 @@ Page({
     this.data.music[index].flag = true;
     this.setData({
       id: index,
-      music: this.data.music
+      music: this.data.music,
+      color: app.color,
     })
   },
 

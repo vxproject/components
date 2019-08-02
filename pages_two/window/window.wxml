@@ -1,8 +1,11 @@
 <image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
-<window id="showmodel" title="提示" content="确定放弃删除该商品？" cancel="返回"  confirm="删除"  binddbButton="dbButton">
+<window id="showmodel" title="提示" content="测试效果···测试效果···测试效果" cancel="返回" confirm="删除" binddbButton="dbButton">
 </window>
-<view class='w-160 radius-10 my-30 p-10-30 bc-olive' catchtap="show">对话弹窗</view>
+
 <window id="showmo" title="普通弹窗" content="测试效果···" type="toast">
 </window>
-<view class=' w-160 radius-10 my-30 p-10-30 bc-olive' catchtap="show2">普通弹窗</view>
-<view wx:for="{{30}}" wx:key="" class='py-30 fc-red'>·{{item}}</view>
+<view style='color:{{color}}'>
+  <view class='radius-10 my-30 py-30 bc-olive middle ' catchtap="show">对话弹窗</view>
+  <view class=' radius-10 my-30 py-30 bc-olive middle' catchtap="show2">普通弹窗</view>
+</view>
+<view wx:for="{{30}}" wx:key="" class='py-30 fc-orange middle'>测试栏目</view>

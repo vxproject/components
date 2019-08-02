@@ -1,6 +1,10 @@
 <view class='h-80'></view>
-<adver-lsz array="{{arr}}" title="测试广告"></adver-lsz>
+<adver-lsz array="{{arr}}" title="测试广告1"></adver-lsz>
 <view class='h-80'></view>
 <adver-lsz array="{{Arr}}" title="爆料" interval="3000" catchChoose="catchChoose"></adver-lsz>
+<view class='h-80'></view>
+<adver-lsz array="{{arr}}" title="测试广告2" vertical="true"></adver-lsz>
+<view class='h-80'></view>
+<adver-lsz array="{{Arr}}" title="爆料" interval="3000" vertical="true"></adver-lsz>
 <window id="showmo" title="小伙子" content="不错哦！有眼光，选择{{item.index==0?'商品吧':item.index==1?'中国最新闻':'普京普京'}}" type="toast">
 </window>

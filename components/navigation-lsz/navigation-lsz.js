@@ -15,14 +15,6 @@ Component({
       type: String,
       value: '#3cc51f'
     },
-    topOrend: { //顶部或底部，默认在顶部
-      type: Boolean,
-      value: true
-    },
-    Distance: { //距离顶部或底部的距离 
-      type: String,
-      value: '0'
-    },
     itemindex:{  //初始导航下标 
       type:Number,
       value:0
@@ -31,8 +23,6 @@ Component({
       type: String,
       value: '',
     },
-
-
   },
 
   /**

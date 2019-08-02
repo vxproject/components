@@ -1,12 +1,11 @@
 <!-- 顶部底部导航 -->
-<view class='bc-white' style="{{topOrend?'top':'bottom'}}:400rpx;z-index:100">
-  <scroll-view scroll-x  scroll-with-animation scroll-into-view="itemindex{{itemindex-1?itemindex-1:0}}"  class='scroll-view w-all'>
-    <view class='row-nowrap '  >
-      <view wx:for="{{arrayList}}" wx:key=""  id="itemindex{{index}}" class=" row-nowrap transform py-20 middle  " style="color:{{index==itemindex?color:''}};width:{{widthItem}}%;" catchtap='_chooseOne' data-index="{{index}}" >{{item}}</view>
+<view class='bc-white fs-30 fc-a3'>
+  <scroll-view scroll-x scroll-with-animation scroll-into-view="itemindex{{itemindex-1?itemindex-1:0}}" class='scroll-view w-all'>
+    <view class='row-nowrap '>
+      <view wx:for="{{arrayList}}" wx:key="" id="itemindex{{index}}" class="row-nowrap transform py-20 middle" style="color:{{index==itemindex?color:''}};width:{{widthItem}}%;" catchtap='_chooseOne' data-index="{{index}}">{{item}}</view>
     </view>
-    <view class='  transform middle' style='width:{{lineBoxWidth}}px;transform: translateX({{translateX}}px)'  hidden='{{!topOrend}}'>
-       <view class='tab_border' style='border-color:{{color}};width:{{lineWidth}}rpx'></view>
+    <view class='transform middle' style='width:{{lineBoxWidth}}px;transform: translateX({{translateX}}px)' >
+      <view class='tab_border' style='border-color:{{color}};width:{{lineWidth}}rpx'></view>
     </view>
-
   </scroll-view>
 </view>

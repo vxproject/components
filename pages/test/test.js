@@ -1,5 +1,4 @@
-// pages/drawer/drawer.js
-let util = require('../../utils/util.js')
+// pages/test/test.js
 Page({
 
   /**
@@ -13,40 +12,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.info(options)
-    if(options.text=='抽屉'){
-      this.setData({
-        flag: options.flag == 'true' ? true : false,
-        direction: options.direction,
-        text: '抽屉'
-      })
-    }else{
-      this.setData({
-        direction: options.direction,
-        text:'普通'
-      })
-    }
+    this.show = this.selectComponent("#tetx");
     
+ 
   },
-  /**
-   * 抽屉
-   */
-  catchtap(){  
-    this.drawer.catchtap();
-    
+  go(){
+    this.show.catchtap();
   },
-  /**
-   * 普通式
-   */
-  catchtapputong(){
-    this.general.catchtap();
-  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    this.drawer = this.selectComponent("#drawer"); // 抽屉式
-    this.general = this.selectComponent("#general"); // 普通式
+
   },
 
   /**
@@ -88,6 +66,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return util.share();
+
   }
 })

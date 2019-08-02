@@ -1,0 +1,146 @@
+@import "../private.wxss";
+@import "../icon.wxss";
+
+/* 向右 */
+
+.side_right_start {
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  width: 100%;
+  transform: scale(1);
+  transform-origin: center center;
+  overflow: auto;
+}
+
+.side_right_end {
+  position: fixed;
+  height: 100vh;
+  left: 80%;
+  width: 100%;
+  transform: scale(0.9);
+  transform-origin: left center;
+  overflow: auto;
+}
+
+.side_right_vice_start {
+  position: fixed;
+  height: 100vh;
+  left: -80%;
+  width: 80%;
+  transform: scale(0.9);
+  transform-origin: right center;
+  overflow: auto;
+}
+
+.side_right_vice_end {
+  position: fixed;
+  height: 100vh;
+  left: 0;
+  width: 80%;
+  transform: scale(1);
+  transform-origin: right center;
+  overflow: auto;
+}
+
+.mask_right {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.mask_right_end {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.icon_right {
+  bottom: 40rpx;
+  right: 50rpx;
+}
+
+.icon_right_end {
+  bottom: 50rpx;
+  right: 60rpx;
+}
+
+/* 向左 */
+
+.side_left_start {
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  width: 100%;
+  transform: scale(1);
+  transform-origin: center center;
+  overflow: auto;
+}
+
+.side_left_end {
+  position: fixed;
+  height: 100vh;
+  right: 80%;
+  width: 100%;
+  transform: scale(0.9);
+  transform-origin: right center;
+  overflow: auto;
+}
+
+.side_left_vice_start {
+  position: fixed;
+  height: 100vh;
+  right: -80%;
+  width: 80%;
+  transform: scale(0.9);
+  transform-origin: left center;
+  overflow: auto;
+}
+
+.side_left_vice_end {
+  position: fixed;
+  height: 100vh;
+  right: 0;
+  width: 80%;
+  transform: scale(1);
+  transform-origin: left center;
+  overflow: auto;
+}
+
+.mask_left {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 20%;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.mask_left_end {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.icon_left {
+  bottom: 40rpx;
+  left: 50rpx;
+}
+
+.icon_left_end {
+  bottom: 50rpx;
+  left: 60rpx;
+}

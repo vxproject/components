@@ -61,8 +61,8 @@ Component({
         color: "#9791f0",
         arrowcolor: "#9791f0",
       })
-      app.color = "#9791f0" ;
-      app.arrowcolor = "#9791f0" ;
+      app.color = "#9791f0";
+      app.arrowcolor = "#9791f0";
       this.triggerEvent('reset', {})
     },
     /**
@@ -142,29 +142,19 @@ Component({
       console.info('当前选择的下标', index)
       switch (index) {
         case 0:
-          wx.navigateTo({
-            url: '/pages_one/view/view',
-          })
+          app.pageTo({ _titleurl: 'pages_one', _url: 'view' })
           break;
         case 1:
-          wx.navigateTo({
-            url: '/pages_one/line/line',
-          })
+          app.pageTo({ _titleurl: 'pages_one', _url: 'line' })
           break;
         case 2:
-          wx.navigateTo({
-            url: '/pages_one/color/color',
-          })
+          app.pageTo({ _titleurl: 'pages_one', _url: 'color' })
           break;
         case 3:
-          wx.navigateTo({
-            url: '/pages_one/position/position',
-          })
+          app.pageTo({ _titleurl: 'pages_one', _url: 'position' })
           break;
         default:
-          wx.navigateTo({
-            url: '/pages_one/animation/animation',
-          })
+          app.pageTo({ _titleurl: 'pages_one', _url: 'animation' })
           break;
       }
     },

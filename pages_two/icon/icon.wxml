@@ -6,7 +6,5 @@
       </view>
       <view class='middle  py-10'  style='color:{{color}}'>icon-{{index}}</view>
     </view>
-
   </view>
-
 </view>

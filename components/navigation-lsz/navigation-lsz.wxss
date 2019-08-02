@@ -1,13 +1,13 @@
 /* components/topTab/topTab.wxss */
 @import "/components/private.wxss";
 
-.bc-white {
+/* .bc-white {
   background-color: #fff;
   position: fixed;
   width: 100%;
   color: #a3a3a3;
   font-size: 30rpx;
-}
+} */
 
 .column_nowrap {
   display: flex;

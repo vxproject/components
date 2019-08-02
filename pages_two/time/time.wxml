@@ -13,21 +13,21 @@
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>直角边框</view>
-  <time-lsz border color="#f37b1d"></time-lsz>
+  <time-lsz border color="{{color}}"></time-lsz>
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>圆角边框</view>
-  <time-lsz border  radius  color="#8dc63f"></time-lsz>
+  <time-lsz border  radius  color="{{color}}"></time-lsz>
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>大</view>
-  <time-lsz border  radius size="50" color="#8dc63f"></time-lsz>
+  <time-lsz border  radius size="50" color="{{color}}"></time-lsz>
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>再大</view>
-  <time-lsz border  radius size="80"   color="#f37b1d"></time-lsz>
+  <time-lsz border  radius size="80"   color="{{color}}"></time-lsz>
 </view>
 <view class='p-30 bc-white between'>
   <view class=''>再大</view>
-  <time-lsz   radius size="100" color="#8dc63f"></time-lsz>
+  <time-lsz   radius size="100" color="{{color}}"></time-lsz>
 </view>

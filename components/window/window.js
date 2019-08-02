@@ -80,7 +80,7 @@ Component({
     },
     // 阻止页面滑动
     catchtouchmove() {
-     return ;
+      return ;
     },
 
     /**

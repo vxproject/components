@@ -1,5 +1,5 @@
 <!-- 顶部状态栏（试验品 全屏） -->
-<view class="fixed w-all z-max  "  style="top:0px;left:0;background:{{bc_nav}};">
-   <view class=" px-30 center {{position=='left'?'':'middle'}} " style='margin-top:24px; height:44px;'>{{content}}</view>
+<view class="fixed w-all z-max  " style="top:0px;left:0;background:{{bc_nav}};">
+  <view class=" px-30 center {{position=='left'?'':'middle'}} " style='margin-top:24px; height:44px;'>{{content}}</view>
 </view>
-<view class='w-all' style='height:68px;' ></view>
+<view class='w-all' style='height:68px;'></view>

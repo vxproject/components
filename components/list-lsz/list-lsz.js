@@ -93,7 +93,6 @@ Component({
    */
   methods: {
 
-
     _chooseOne(e){
       let  index=e.currentTarget.dataset.index;  //获取当前下标
       let item=e.currentTarget.dataset.item ;

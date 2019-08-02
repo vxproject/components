@@ -1,0 +1,9 @@
+/* pages/test/test.wxss */
+.sss{
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50rpx;
+  font-weight: bold;
+}

@@ -21,15 +21,15 @@ Component({
 
   },
   lifetimes: {
-    created (){
-    
+    created() {
+
     },
     attached() {
       // 在组件实例进入页面节点树时执行
       this.toast = this.selectComponent("#toast");
-       this.setData({
-         color:app.color
-       })
+      this.setData({
+        color: app.color
+      })
     },
     detached() {
       // 在组件实例被从页面节点树移除时执行
@@ -43,7 +43,7 @@ Component({
     catchinput(e) {
       console.info(e)
     },
-  
+
     catchtap() {
       wx.makePhoneCall({
         phoneNumber: '15516152770',
@@ -58,66 +58,41 @@ Component({
       let index = e.currentTarget.dataset.index;
       console.info('选择的是-----', index)
       switch (index) {
-
         case 1:
-          wx.navigateTo({
-            url: '/pages_two/swiper/swiper',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'swiper' })
           break;
         case 2:
-          wx.navigateTo({
-            url: '/pages_two/window/window',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'window' })
           break;
         case 3:
-          wx.navigateTo({
-            url: '/pages_two/commonSidebar/commonSidebar',
-          })
+          app.pageTo({ _titleurl: 'pages_three', _url: 'commonSidebar' })
           break;
         case 4:
-          wx.navigateTo({
-            url: '/pages_two/radio/radio',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'radio' })
           break;
         case 5:
-          wx.navigateTo({
-            url: '/pages_two/navigation-lsz/navigation-lsz',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'navigation-lsz' })
           break;
         case 6:
-          wx.navigateTo({
-            url: '/pages_two/tag/tag',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'tag' })
           break;
         case 7:
-          wx.navigateTo({
-            url: '/pages_two/button/button',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'button' })
           break;
         case 8:
-          wx.navigateTo({
-            url: '/pages_two/icon/icon',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'icon' })
           break;
         case 9:
-          wx.navigateTo({
-            url: '/pages_two/advertising/advertising',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'advertising' })
           break;
         case 10:
-          wx.navigateTo({
-            url: '/pages_two/time/time',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'time' })
           break;
         case 11:
-          wx.navigateTo({
-            url: '/pages_two/map/map',
-          })
+          app.pageTo({ _titleurl: 'pages_two', _url: 'map' })
           break;
-
         default:
           this.toast.showmodel();
-
           break;
       }
 

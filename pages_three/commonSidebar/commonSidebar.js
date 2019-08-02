@@ -1,6 +1,6 @@
 // pages_two/commonSidebar/commonSidebar.js
 let util = require('../../utils/util.js')
-const app=getApp();
+const app = getApp();
 Page({
 
   /**
@@ -16,10 +16,10 @@ Page({
     ],//普通的
 
     Arr: [
-      { title: '· 抽屉式侧边栏一', cont: 'one', text: 'right', txt: '(向右滑动)' },
-      { title: '· 抽屉式侧边栏一', cont: 'one', text: 'left', txt: '(向左滑动)' },
-      { title: '· 抽屉式侧边栏二', cont: 'two', text: 'right', txt: '(向右滑动)' },
-      { title: '· 抽屉式侧边栏二', cont: 'two', text: 'left', txt: '(向左滑动)' }
+      { title: '· 抽屉式侧边栏一', text: 'right', txt: '(向右滑动)', type: 1 },
+      { title: '· 抽屉式侧边栏一', text: 'left', txt: '(向左滑动)', type: 1 },
+      { title: '· 抽屉式侧边栏二', text: 'right', txt: '(向右滑动)', type: 2 },
+      { title: '· 抽屉式侧边栏二', text: 'left', txt: '(向左滑动)', type: 2 }
     ]
 
 
@@ -37,24 +37,18 @@ Page({
    */
   choose(e) {
     let title = e.currentTarget.dataset.title;
-    wx.navigateTo({
-      url: '/pages_two/drawer/drawer?direction=' + title,
-    })
+    app.pageTo({ _titleurl: 'pages_three', _url: 'side-common', _param: title })
   },
   /**
    * 抽屉式
    */
   chooseBox(e) {
-    let title = e.currentTarget.dataset.title;
-    let direction = e.currentTarget.dataset.index;
-    let flag = true;
-    if (title == 'one') {
-      flag = false;
+    let item = e.currentTarget.dataset.item;
+    if (item.type == 1) {
+      app.pageTo({ _titleurl: 'pages_three', _url: 'side-drawerone', _param: item })
+    } else {
+      app.pageTo({ _titleurl: 'pages_three', _url: 'side-drawer', _param: item })
     }
-
-    wx.navigateTo({
-      url: '/pages_two/drawer/drawer?flag=' + flag + '&&direction=' + direction + '&&text=抽屉',
-    })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -67,7 +61,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
- 
+
   },
 
   /**

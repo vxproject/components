@@ -10,7 +10,7 @@ Component({
     },
     array: {  //广告内容
       type: Array,
-      value: []
+      value: ['广告内容', '广告内容', '广告内容']
     },
     height: {  //广告栏高度
       type: Number,
@@ -23,6 +23,10 @@ Component({
     duration: {  //滑动时长
       type: Number,
       value: 2000
+    },
+    vertical:{ //播放方向  false :纵向  true :横向
+      type:Boolean,
+      value:false
     }
 
 
@@ -36,12 +40,12 @@ Component({
   },
   lifetimes: {
     attached() {
-      if (typeof array != Array){
+      if (this.data.array instanceof  Array){
+      }else{
         this.setData({
-          array:[]
+          array: []
         })
       }
-      
     },
     ready() {
 
