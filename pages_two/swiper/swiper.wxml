@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="轮播图样式"></navtop-lsz>
 <view class='m-40 fc-red'>·普通轮播</view>
 <wxswiper list="{{imglist}}" ind_dots catchTap="catchTap" autoplay circular ind_type="heart"></wxswiper>
 <view class='m-40 fc-red'>·卡片形式</view>

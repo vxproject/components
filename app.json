@@ -12,11 +12,9 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "李守长"
-  },
-  "usingComponents": {
-    "custom-tabbar": "/custom-tab-bar/index"
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "李守长",
+    "navigationStyle":"custom"
   },
   "subpackages": [
     {
@@ -63,7 +61,8 @@
       "root": "pages_four",
       "name": "pages_four",
       "pages": [
-        "own_about/own_about"
+        "own_about/own_about",
+        "own_sug/own_sug"
       ]
     }
   ],
@@ -74,6 +73,10 @@
         "pages_two"
       ]
     }
+  },
+  "usingComponents": {
+      "navtop-lsz": "/components/navTop-lsz/navTop-lsz",
+      "navtopfather-lsz":"/components/navtopfather-lsz/navtopfather-lsz"
   },
   "permission": {
     "scope.userLocation": {

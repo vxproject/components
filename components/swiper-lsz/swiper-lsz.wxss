@@ -1,9 +1,9 @@
 /* components/swiper-lsz/swiper-lsz.wxss */
 @import "/components/private.wxss";
-
+@import "../icon.wxss";
 .swiper-item {
-  width: 610rpx !important;
-  left: 70rpx;
+  width: 660rpx !important;
+  left: 45rpx;
   box-sizing: border-box;
   padding: 40rpx 0rpx 70rpx;
   overflow: initial;
@@ -17,8 +17,8 @@
   width: 100%;
   display: block;
   height: 100%;
-  border-radius: 20rpx;
-  transform: scale(0.9);
+  border-radius: 12rpx;
+  transform: scale(0.93);
   transition: all 0.2s ease-in 0s;
   opacity: 0.4;
 }
@@ -27,7 +27,7 @@
   width: 100%;
   display: block;
   height: 100%;
-  border-radius: 20rpx;
+  border-radius: 12rpx;
   transform: none;
   transition: all 0.2s ease-in 0s;
   opacity: 1;

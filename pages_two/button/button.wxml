@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="按钮-样式"></navtop-lsz>
 <view class='p-30'>
   <btn-lsz content="默认状态"></btn-lsz>
 </view>

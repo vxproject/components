@@ -23,15 +23,15 @@ Component({
       type: Boolean,
       value: false
     },
-    ind_type: { //指示点形状  （暂时提供   圆形：circle，心形:heart, ）
+    ind_type: { //指示点形状  
       type: String,
       value: 'circle'
     },
-    ind_color: { //指示点颜色 （注：ind_type为circle时有效）
+    ind_color: { //指示点颜色 
       type: String,
       value: "rgba(0,0,0,.3)"
     },
-    ind_active_color: { //当前指示点颜色 （注：ind_type为circle时有效）
+    ind_active_color: { //当前指示点颜色 
       type: String,
       value: "#ffffff"
     },

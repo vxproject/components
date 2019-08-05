@@ -1,5 +1,16 @@
-<!-- 顶部状态栏（试验品 全屏） -->
-<view class="fixed w-all z-max  " style="top:0px;left:0;background:{{bc_nav}};">
-  <view class=" px-30 center {{position=='left'?'':'middle'}} " style='margin-top:24px; height:44px;'>{{content}}</view>
+<!-- 顶部状态栏（子页面使用） -->
+<view class=' center  fixed  z-1000 w-all' style='height:{{navHeight-statusBarHeight}}px;padding-top:{{statusBarHeight}}px;top:0;left:0;background:{{bc_nav}};'>
+  <view class='row-nowrap  relative w-all fs-30' style='color:{{color}};' catchtap='goback'>
+    <view class='center shrink  px-10' >
+      <i class=" icon-40 iconfont   fs-36 rotate-90" />
+      <view class='shrink '>
+        {{left_title}}
+      </view>
+    </view>
+    <view class=' absolute  w-all middle  ' style='bottom:0;left:0;'>
+      {{center_title}}
+    </view>
+  </view>
 </view>
-<view class='w-all' style='height:68px;'></view>
+<view style='height:{{navHeight-statusBarHeight}}px;padding-top:{{statusBarHeight}}px;'>
+</view>

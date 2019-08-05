@@ -1,3 +1,4 @@
+<navtopfather-lsz wx:if="{{selectId==2}}" color="#fff" center_title="媒体-效果"></navtopfather-lsz>
 <index_lsz id="indexpage" wx:if="{{selectId==0}}" catchchange="catchchange"  catchreset="catchreset"></index_lsz>
 <custom_lsz wx:if="{{selectId==1}}"></custom_lsz>
 <media_lsz wx:if="{{selectId==2}}"></media_lsz>

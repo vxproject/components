@@ -9,8 +9,7 @@
     </block>
   </swiper>
   <view class='absolute middle w-all row-nowrap' style='bottom:20rpx;left:0' hidden='{{!ind_dots}}'>
-    <view wx:for="{{list}}" wx:key="" class="mx-10 {{ind_type=='heart'? nowindex==index?ind_type:'heartG' :ind_type}}  " style="background:{{  ind_type=='heart'?'':nowindex==index? ind_active_color : ind_color}}  ">
-    </view>
+    <i class=" fs-30 iconfont icon-5  mx-10 " style="color:{{nowindex==index ? ind_active_color :ind_color}}"  wx:for="{{list}}" ></i>
   </view>
 </view>
 <!-- 卡片式轮播 -->
@@ -25,8 +24,7 @@
     </block>
   </swiper>
   <view class='absolute middle w-all row-nowrap' style='bottom:20rpx;left:0' hidden='{{!ind_dots}}'>
-    <view wx:for="{{list}}" wx:key="" class="mx-10 {{ind_type=='heart'? nowindex==index?ind_type:'heartG' :ind_type}}  " style="background:{{  ind_type=='heart'?'':nowindex==index? ind_active_color : ind_color}}  ">
-    </view>
+     <i class=" fs-30 iconfont icon-5  mx-10 " style="color:{{nowindex==index ? ind_active_color :ind_color}}"  wx:for="{{list}}" ></i>
   </view>
 </view>
 

@@ -8,17 +8,13 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    color:{ //导航字体箭头颜色
-      type:String,
-      value:'#333'
+    color: { //导航字体箭头颜色
+      type: String,
+      value: '#333'
     },
     bc_nav: { //导航栏背景色
       type: String,
       value: "linear-gradient(45deg, #3bb9f4, #00ec7e)"
-    },
-    left_title: {// 左侧标题
-      type: String,
-      value: '返回'
     },
     center_title: {  // 中间标题
       type: String,
@@ -38,7 +34,6 @@ Component({
   },
   lifetimes: {
     attached() {
-      console.info('全局-------app', app)
       this.setData({
         navHeight: app.navHeight,
         statusBarHeight: app.statusBarHeight
@@ -57,10 +52,6 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    goback() {
-      wx.navigateBack({
-        delta: 1
-      })
-    },
+ 
   }
 })

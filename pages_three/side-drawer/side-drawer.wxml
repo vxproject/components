@@ -1,7 +1,8 @@
 <!-- 抽屉式侧边 -->
+<navtop-lsz color="#fff" center_title="抽屉模式二"></navtop-lsz>
 <side-drawer-lsz id="drawer" direction="{{direction}}">
   <view slot="side_content">
-    <view wx:for="{{30}}" wx:key="" style='color:{{color}}' class='middle h-120 center ' catchtap='catchtap' >{{txt}}</view>
+    <view wx:for="{{30}}" wx:key="" style='color:{{color}}' class='middle h-120 center ' catchtap='catchtap'>{{txt}}</view>
   </view>
   <view slot="side_vice">
     <view wx:for="{{30}}" wx:key="" class='middle py-30 fs-30 fc-orange'>测试内容</view>

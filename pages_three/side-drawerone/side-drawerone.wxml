@@ -1,4 +1,5 @@
 <!-- 抽屉式模式一侧边 -->
+<navtop-lsz color="#fff" center_title="抽屉模式一"></navtop-lsz>
 <side-drawer-lsz id="drawer" direction="{{direction}}">
   <view slot="side_content">
     <view wx:for="{{30}}" wx:key="" style='color:{{color}}' class='middle h-120 center ' catchtap='catchtap' >{{txt}}{{txt}}{{txt}}{{txt}}</view>

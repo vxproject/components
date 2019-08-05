@@ -7,7 +7,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src: app.src,
     arr: [
       { title: '(向右滑动)', cont: 'right' },
       { title: '(向左滑动)', cont: 'left' },

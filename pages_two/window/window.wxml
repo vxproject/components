@@ -1,4 +1,4 @@
-<image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
+<navtop-lsz color="#fff" center_title="弹窗"></navtop-lsz>
 <window id="showmodel" title="提示" content="测试效果···测试效果···测试效果" cancel="返回" confirm="删除" binddbButton="dbButton">
 </window>
 

@@ -1,6 +1,4 @@
-// pages_four/own_about/own_about.js
-let util = require('../../utils/util.js');
-const app = getApp();
+// pages_four/own_sug/own_sug.js
 Page({
 
   /**
@@ -63,6 +61,6 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
-    return util.share();
+
   }
 })

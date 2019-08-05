@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="角标/徽章"></navtop-lsz>
 <view class=' middle p-40' style='color:{{color}}'>直角类型 type为no</view>
 <view class='p-30 '>
   <tag-lsz>团购</tag-lsz>

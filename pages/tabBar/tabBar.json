@@ -1,5 +1,4 @@
 {
-  "navigationStyle": "custom",
   "usingComponents": {
     "custom_lsz": "/pages/custom/custom",
     "index_lsz": "/pages/index/index",

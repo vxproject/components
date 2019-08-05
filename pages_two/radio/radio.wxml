@@ -1,4 +1,5 @@
 <!-- 处理bug，需要设置页面高度 -->
+<navtop-lsz color="#fff" center_title="选择弹窗"></navtop-lsz>
 <view style='color:{{color}}'>
   <view class='m-30' catchtap='chooseRadio'>【单项选择框（无默认选项）】</view>
   <radio id="radio" array="{{arr}}" checkedindex="3" bindcancel='bindcancel'></radio>

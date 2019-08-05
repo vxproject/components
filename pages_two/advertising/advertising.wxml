@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="广告-商城"></navtop-lsz>
 <view class='h-80'></view>
 <adver-lsz array="{{arr}}" title="测试广告1"></adver-lsz>
 <view class='h-80'></view>

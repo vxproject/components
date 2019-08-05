@@ -1,4 +1,4 @@
-<image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
+<navtop-lsz color="#fff" center_title="自定义导航"></navtop-lsz>
 <navigation-lsz bindchooseOne="chooseOne" arrayList="{{arr}}" lineWidth="60" itemindex="0" color="{{color}}"></navigation-lsz>
 <view class=' middle  py-30  ' >
   选择第--<text style='color:{{color}}'>{{index}}</text>---项目

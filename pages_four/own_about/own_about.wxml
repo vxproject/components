@@ -1,2 +1,1 @@
-
-<image mode='widthFill' class='shrink  w-all ' src='{{src}}' />
+<navtop-lsz color="#fff" center_title="关于-李守长组件"></navtop-lsz>

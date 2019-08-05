@@ -1,0 +1,8 @@
+<!-- 顶部状态栏（父页面使用） -->
+<view class=' center  fixed middle z-1000 w-all' style='height:{{navHeight-statusBarHeight}}px;padding-top:{{statusBarHeight}}px;top:0;left:0;background:{{bc_nav}};'>
+  <view class='middle' style='color:{{color}};'>
+    {{center_title}}
+  </view>
+</view>
+<view style='height:{{navHeight-statusBarHeight}}px;padding-top:{{statusBarHeight}}px;'>
+</view>

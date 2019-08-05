@@ -7,8 +7,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    src: app.src,
-    color:app.color,
+ 
     arr: ['唐玄奘', '孙悟空', '猪悟能', '西天取经···','沙悟净', '广力菩萨','观世音','如来佛祖'],  
     index: 0,
   },
@@ -23,7 +22,8 @@ Page({
        list[i] = String.fromCharCode(65+i);
      }
      this.setData({
-       list: list
+       list: list,
+       color: app.color,
      })
   },
    /**

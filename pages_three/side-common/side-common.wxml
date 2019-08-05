@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="普通的侧边"></navtop-lsz>
 <side-common-lsz id="side" direction="{{direction}}">
   <view slot="side_content">
     <view wx:for="{{30}}" wx:key="" class='middle py-30 fs-30 fc-orange'>测试内容</view>

@@ -6,6 +6,9 @@
   <view class='btn_contact'>
     <button open-type='contact' class='btn_cont' style='background:{{color}};'> 客服中心</button>
   </view>
+  <view class='btn_contact'>
+    <button open-type='feedback' class='btn_cont'  style='background:{{color}};'> 宝贵意见</button>
+  </view>
 
 </view>
 

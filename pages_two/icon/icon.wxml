@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="图标"></navtop-lsz>
 <view class='bc-white row  p-30 around'>
   <view wx:for="{{68}}" wx:key="" class="wp-20 b  px-30 m-10  " style="animation: show  {{index*0.2+2}}s 1">
     <view class=' py-40 w-all  '>

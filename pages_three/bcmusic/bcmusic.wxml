@@ -1,4 +1,4 @@
-<image mode='widthFill' class='shrink  w-all  ' src='{{src}}' />
+<navtop-lsz color="#fff" center_title="背景"></navtop-lsz>
 <view class='bc-white px-30 fs-30'>
    <view wx:for="{{music}}" wx:key="" class=' row_nowrap between center p-20  bb '  catchtap='chooseOne' data-index="{{index}}">
      <view style='color:{{color}}'>{{item.title}}</view>

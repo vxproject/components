@@ -25,14 +25,12 @@ Component({
   methods: {
 
     catchchooseOne(e) {
-      console.info('媒体列表点击事件----对象', e)
       let index = e.detail.index;
       switch (index) {
         case 0:
-          wx.navigateTo({
-            url: '/pages_four/own_about/own_about',
-          })
+          app.pageTo({ _titleurl: 'pages_four', _url:'own_about'})
           break;
+     
         default:
           this.toast.showmodel();
           break;

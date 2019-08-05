@@ -1,4 +1,5 @@
 <!--pages/time/time.wxml-->
+<navtop-lsz color="#fff" center_title="计时器"></navtop-lsz>
 <view class='p-30 bc-white between'>
   <view class=''>默认状态（24小时）</view>
   <time-lsz></time-lsz>
