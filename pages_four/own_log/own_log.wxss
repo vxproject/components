@@ -1,0 +1,13 @@
+@import "../../components/private.wxss";
+@import "../../components/icon.wxss";
+
+.time_mode {
+  padding: 30rpx 30rpx 30rpx 120rpx;
+}
+
+.left-line {
+  width: 1rpx;
+  background: #ddd;
+  display: flex;
+  flex-shrink: 0;
+}

@@ -1,0 +1,17 @@
+<navtop-lsz color="#fff" center_title="更新日志" bc_nav="{{bc_color}}"></navtop-lsz>
+<view class='time_mode relative  bc-white fs-24' wx:for="{{arr}}" wx:key="">
+  <view class=' absolute left-line h-all  center  ' style='top:0;left:60rpx;'>
+  </view>
+  <view class='wh-60 radius-p5 absolute z-500 bc-white' style='top:60rpx;left:44rpx;'></view>
+  <i class=" iconfont icon-28 {{index == 0 ? 'fc-green' :'fc-a3'}}  shrink absolute z-1000" style='top:75rpx;left:44rpx;' />
+  <view class='p-30 bg-grad-green fc-white radius-8'>
+    <view class='fs-26 between mb-20'>
+      <view class='border hidden radius-6  row  '>
+        <view class='px-20 py-6 bc-white fc-green'>{{item.version}}</view>
+        <view class='px-20 py-6'>{{item.time}}</view>
+      </view>
+      <view></view>
+    </view>
+    <view class='' wx:for="{{item.arr}}" wx:key="">{{index+1+'.'+item}}</view>
+  </view>
+</view>

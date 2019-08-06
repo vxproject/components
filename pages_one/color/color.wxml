@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="色值-效果"></navtop-lsz>
 <view class='bc-white p-30 fc-66'>背景色（bc-）</view>
 <view class='row  p-30'>
   <view wx:for="{{ColorList}}" wx:key="" class="  wp-33   {{index==14?'':'fc-white'}}">

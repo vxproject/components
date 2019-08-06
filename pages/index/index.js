@@ -154,7 +154,8 @@ Component({
           app.pageTo({ _titleurl: 'pages_one', _url: 'position' })
           break;
         default:
-          app.pageTo({ _titleurl: 'pages_one', _url: 'animation' })
+          // app.pageTo({ _titleurl: 'pages_one', _url: 'animation' })
+          this.toast.showmodel();
           break;
       }
     },

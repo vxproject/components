@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="视图-效果"></navtop-lsz>
 <view class='center middle p-30 bc-white fc-green'>视图一</view>
 <view class='row-nowrap bc-white p-30 middle fc-white'>
   <view wx:for="{{3}}" wx:key="" class="wh-180 center middle {{index==0?'bc-green':index==1?'bc-red':'bc-orange'}}">{{index}}</view>

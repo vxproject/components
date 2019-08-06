@@ -339,6 +339,10 @@
 .bg-gradual-green {
   background: linear-gradient(45deg, #3bb9f4, #00ec7e);
 }
+/* bc_color:'linear-gradient(45deg, #39b54a, #8dc63f)', */
+.bg-grad-green{
+  background: linear-gradient(45deg, #39b54a, #8dc63f);
+}
 
 /* 外边距  */
 

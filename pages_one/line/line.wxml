@@ -1,3 +1,4 @@
+<navtop-lsz color="#fff" center_title="边线-效果"></navtop-lsz>
 <view class='shrink bc-white px-30 fc-green'>class命名：bb</view>
 <view class='row-nowrap  between p-30 bc-white center'>
    <view class='mr-30 shrink'>1rpx的细线</view>

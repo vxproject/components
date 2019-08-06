@@ -7,7 +7,7 @@ Component({
    */
   data: {
     src:'https://6c73-lszmusic-dsdxp-1259095491.tcb.qcloud.la/images/public/%E6%B0%B4%E7%8F%A0.jpg?sign=fa0fefd1ae8f1d8a5b26b174d54a2c00&t=1558423463',
-    arrayList: [{ title: '关于' }, { title: '日志' }]
+    arrayList: [{ title: '关于' }, { title: '日志' },{title:'未定义'}]
   },
   lifetimes: {
     attached() {
@@ -30,7 +30,9 @@ Component({
         case 0:
           app.pageTo({ _titleurl: 'pages_four', _url:'own_about'})
           break;
-     
+        case 1:
+          app.pageTo({ _titleurl: 'pages_four', _url: 'own_log' })
+          break;
         default:
           this.toast.showmodel();
           break;

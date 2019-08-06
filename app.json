@@ -1,20 +1,14 @@
 {
   "pages": [
     "pages/tabBar/tabBar",
-        "pages/test/test",
-        
-    
+    "pages/test/test",
     "pages/index/index",
     "pages/custom/custom",
     "pages/media/media",
     "pages/own/own"
   ],
   "window": {
-    "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTextStyle": "white",
-    "navigationBarTitleText": "李守长",
-    "navigationStyle":"custom"
+    "navigationStyle": "custom"
   },
   "subpackages": [
     {
@@ -32,10 +26,8 @@
       "root": "pages_two",
       "name": "pages_two",
       "pages": [
-     
         "window/window",
         "swiper/swiper",
-       
         "radio/radio",
         "navigation-lsz/navigation-lsz",
         "tag/tag",
@@ -50,11 +42,11 @@
       "root": "pages_three",
       "name": "pages_three",
       "pages": [
-          "bcmusic/bcmusic",
-          "commonSidebar/commonSidebar",
-          "side-common/side-common",
-          "side-drawer/side-drawer",
-          "side-drawerone/side-drawerone"
+        "bcmusic/bcmusic",
+        "commonSidebar/commonSidebar",
+        "side-common/side-common",
+        "side-drawer/side-drawer",
+        "side-drawerone/side-drawerone"
       ]
     },
     {
@@ -62,7 +54,7 @@
       "name": "pages_four",
       "pages": [
         "own_about/own_about",
-        "own_sug/own_sug"
+        "own_log/own_log"
       ]
     }
   ],
@@ -75,8 +67,8 @@
     }
   },
   "usingComponents": {
-      "navtop-lsz": "/components/navTop-lsz/navTop-lsz",
-      "navtopfather-lsz":"/components/navtopfather-lsz/navtopfather-lsz"
+    "navtop-lsz": "/components/navTop-lsz/navTop-lsz",
+    "navtopfather-lsz": "/components/navtopfather-lsz/navtopfather-lsz"
   },
   "permission": {
     "scope.userLocation": {
